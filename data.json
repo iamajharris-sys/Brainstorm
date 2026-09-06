@@ -1,117 +1,1193 @@
 {
   "updated": "2026-09-06",
-  "seed": true,
+  "seed": false,
   "categories": [
-    {"id":"beverages","name":"Beverages","color":"#FF6B3D","trend":"up","heat":82,
-     "gaps":["Functional drinks still taste like medicine — flavor is the open lane","No dominant brand in adult non-alc cocktails at bars (on-premise)","Water brands win on packaging, not product — a real hydration-science play is open"],
-     "companies":[
-       {"name":"Olipop","what":"Prebiotic soda","stage":"Late-stage / $1B+ val","signal":"Gained shelf space at Walmart and Target; prebiotic soda now a defined aisle","trend":"up","why":"Proved big-soda drinkers will switch if it tastes like soda"},
-       {"name":"Liquid Death","what":"Canned water with metal-brand marketing","stage":"Late-stage","signal":"Expanding into iced tea and sparkling flavors; heavy on-premise push","trend":"up","why":"Brand > product — packaging alone created a category"},
-       {"name":"Athletic Brewing","what":"Non-alcoholic craft beer","stage":"Late-stage","signal":"Largest NA beer brand in US; opened second brewery","trend":"up","why":"Sober-curious trend is durable, not a fad"}
-     ]},
-    {"id":"consumer-products","name":"Consumer Products","color":"#FFC53D","trend":"flat","heat":55,
-     "gaps":["Most DTC brands are Shopify + Meta ads — undifferentiated; the ones winning own a physical retail story","Home cleaning and maintenance products have had no real innovation in years"],
-     "companies":[
-       {"name":"Ridge","what":"Minimalist wallets, now luggage and rings","stage":"Bootstrapped, $100M+ rev","signal":"Expanding categories off one hero SKU","trend":"up","why":"One well-made object + relentless ads still works"},
-       {"name":"Jolie","what":"Filtered showerhead","stage":"Growth","signal":"Beauty-positioned hardware, subscription filters","trend":"up","why":"Turned a plumbing part into a beauty product with recurring revenue"}
-     ]},
-    {"id":"home-services","name":"Home Services","color":"#3DDC97","trend":"up","heat":78,
-     "gaps":["Booking still happens by phone and text — most operators have no real software","Commercial exterior services (windows, pressure washing, lighting) have no consolidated brand at all"],
-     "companies":[
-       {"name":"Jobber","what":"Field service software for small operators","stage":"Late-stage","signal":"Adding AI phone answering and quoting","trend":"up","why":"Owns the SMB trades workflow; watch what they can't do"},
-       {"name":"Frontdoor (Frontdoor Pro)","what":"Home repair marketplace","stage":"Public","signal":"Pushing on-demand video diagnosis","trend":"flat","why":"Shows demand for remote triage before a truck rolls"}
-     ]},
-    {"id":"restaurants","name":"Restaurants & Food","color":"#FF4D6D","trend":"flat","heat":60,
-     "gaps":["Ghost kitchens over-built; the winning model is small-footprint, high-throughput single-concept","Labor is the constraint — automation that fits an existing kitchen, not a robot restaurant"],
-     "companies":[
-       {"name":"Cava","what":"Mediterranean fast-casual","stage":"Public","signal":"Still opening units fast while peers slow","trend":"up","why":"Proof a new cuisine can still scale nationally"},
-       {"name":"Sweetgreen","what":"Salad chain with automated 'Infinite Kitchen'","stage":"Public","signal":"Rolling automation to more stores","trend":"flat","why":"Watch whether automation actually improves unit economics"}
-     ]},
-    {"id":"health-wearables","name":"Health & Wearables","color":"#5B8CFF","trend":"up","heat":88,
-     "gaps":["Data is everywhere, interpretation is nowhere — people want 'so what do I do'","Men's health and longevity clinics are fragmented and local"],
-     "companies":[
-       {"name":"Oura","what":"Smart ring","stage":"Late-stage, $5B+ val","signal":"Passed 5M rings; adding metabolic and women's health features","trend":"up","why":"Screenless wearable won — form factor matters"},
-       {"name":"Function Health","what":"Annual 100+ biomarker lab panels","stage":"Growth","signal":"Rapid member growth, acquired Ezra (whole-body MRI)","trend":"up","why":"Consumers will pay cash for diagnostics doctors won't order"},
-       {"name":"Whoop","what":"Subscription fitness band","stage":"Late-stage","signal":"Launched new hardware and blood-pressure insights","trend":"up","why":"Subscription hardware model holds"}
-     ]},
-    {"id":"fintech","name":"Fintech","color":"#9B6BFF","trend":"flat","heat":58,
-     "gaps":["Small-business banking for trades and field companies is still bad","Invoice-to-cash for B2B services remains manual"],
-     "companies":[
-       {"name":"Ramp","what":"Corporate cards + spend management","stage":"Late-stage, $10B+","signal":"Pushing AI agents that book travel and file expenses","trend":"up","why":"Software eats the finance team"},
-       {"name":"Mercury","what":"Startup and SMB banking","stage":"Late-stage","signal":"Expanding to personal banking and invoicing","trend":"up","why":"Bank as software product, not branch"}
-     ]},
-    {"id":"ai-tools","name":"AI Tools","color":"#00C2FF","trend":"up","heat":97,
-     "gaps":["Vertical AI for boring industries (property management, trades, logistics) is wide open","Most tools stop at 'draft' — the money is in tools that finish the job"],
-     "companies":[
-       {"name":"Cursor (Anysphere)","what":"AI code editor","stage":"Late-stage, multi-$B","signal":"Fastest-growing dev tool by revenue","trend":"up","why":"Shows how fast a wedge product can win a category"},
-       {"name":"Lovable","what":"Prompt-to-app builder","stage":"Growth","signal":"Non-developers shipping real apps","trend":"up","why":"Software creation is becoming a consumer behavior"},
-       {"name":"Harvey","what":"AI for law firms","stage":"Late-stage","signal":"Big-law adoption; expanding to in-house teams","trend":"up","why":"Template for vertical AI in a high-billing industry"}
-     ]},
-    {"id":"logistics","name":"Logistics & Delivery","color":"#FF9F1C","trend":"up","heat":72,
-     "gaps":["Hyperlocal (under 30 min) delivery outside dense cities is unsolved","Last-mile for heavy or awkward items still relies on 2-man crews"],
-     "companies":[
-       {"name":"Zipline","what":"Drone delivery","stage":"Late-stage","signal":"US suburban home delivery live with Walmart","trend":"up","why":"Drones moved from Africa medical to US groceries"},
-       {"name":"Veho","what":"Next-day parcel via gig drivers","stage":"Growth","signal":"Expanding metro coverage","trend":"flat","why":"Asset-light regional carriers can beat UPS on last mile"}
-     ]},
-    {"id":"real-estate","name":"Real Estate & Proptech","color":"#2EC4B6","trend":"down","heat":45,
-     "gaps":["Building maintenance vendors are still found by referral and spreadsheet","Commercial property managers have no good vendor-performance data"],
-     "companies":[
-       {"name":"Pacaso","what":"Co-owned second homes","stage":"Growth","signal":"Slowed with rates; retail investor raise","trend":"down","why":"Rate-sensitive models are exposed"},
-       {"name":"EliseAI","what":"AI leasing and resident assistant for property managers","stage":"Growth","signal":"Widening from leasing to maintenance requests","trend":"up","why":"Property management is buying AI — vendors can plug in"}
-     ]},
-    {"id":"energy","name":"Energy & Climate","color":"#7ED957","trend":"up","heat":70,
-     "gaps":["Residential batteries are sold like solar — pushy; no trusted brand","Commercial rooftop and facade retrofits lack an installer-of-record brand"],
-     "companies":[
-       {"name":"Base Power","what":"Home battery as a utility subscription (Texas)","stage":"Growth","signal":"Big raise; installing thousands of batteries","trend":"up","why":"Subscription flips the capex problem"},
-       {"name":"Lunar Energy","what":"Home battery + software","stage":"Growth","signal":"Utility partnerships","trend":"flat","why":"Hardware alone is commoditizing"}
-     ]},
-    {"id":"beauty","name":"Beauty & Personal Care","color":"#FF7EB6","trend":"up","heat":68,
-     "gaps":["Men's grooming beyond razors is under-branded","Med spa chains are rolling up but customer software is terrible"],
-     "companies":[
-       {"name":"Rhode","what":"Skincare, sold to e.l.f.","stage":"Acquired ~$1B","signal":"Founder-brand exit sets the playbook","trend":"up","why":"Small SKU count + creator distribution = fast exit"},
-       {"name":"Ever/Body","what":"Med spa chain","stage":"Growth","signal":"Opening units in major metros","trend":"up","why":"Aesthetics is becoming a chain business"}
-     ]},
-    {"id":"travel","name":"Travel & Hospitality","color":"#4CC9F0","trend":"flat","heat":52,
-     "gaps":["Group trip planning and payment is still a group chat","Boutique hotel operations software is a decade behind"],
-     "companies":[
-       {"name":"Mindtrip","what":"AI trip planner","stage":"Early","signal":"Adding booking and group features","trend":"up","why":"AI planning is the new front door if it can book"},
-       {"name":"Sonder","what":"Apartment-style hotels","stage":"Public, distressed","signal":"Restructuring","trend":"down","why":"Asset-heavy hospitality tech struggles"}
-     ]},
-    {"id":"education","name":"Education","color":"#B5179E","trend":"flat","heat":50,
-     "gaps":["Trades training has no premium brand — everything is community college or YouTube","Adult upskilling for AI is fragmented"],
-     "companies":[
-       {"name":"Alpha School","what":"AI-driven 2-hour learning school model","stage":"Growth","signal":"Expanding campuses beyond Texas","trend":"up","why":"Private K-12 reinvention has real demand"},
-       {"name":"Synthesis","what":"AI math tutor for kids","stage":"Growth","signal":"Product expansion","trend":"flat","why":"Consumer edtech is hard; watch retention"}
-     ]},
-    {"id":"pets","name":"Pets","color":"#F4A261","trend":"up","heat":66,
-     "gaps":["Vet care is consolidating under PE — an independent, transparent-pricing chain is open","Pet insurance still confusing and low-penetration"],
-     "companies":[
-       {"name":"Ollie","what":"Fresh dog food subscription","stage":"Growth","signal":"Retail expansion","trend":"flat","why":"Fresh pet food is now a category, not a niche"},
-       {"name":"Bond Vet","what":"Modern urgent-care vet clinics","stage":"Growth","signal":"Opening clinics across East Coast","trend":"up","why":"Retail-style vet is working"}
-     ]},
-    {"id":"fitness","name":"Fitness","color":"#E63946","trend":"up","heat":74,
-     "gaps":["Recovery (sauna, cold plunge, red light) studios are booming with no national brand","Strength-only gyms for regular people, not powerlifters"],
-     "companies":[
-       {"name":"Tonal","what":"Smart strength machine","stage":"Late-stage","signal":"New hardware gen; profitability push","trend":"flat","why":"Connected fitness survivors are consolidating"},
-       {"name":"Remedy Place","what":"Social wellness club","stage":"Growth","signal":"Expanding locations","trend":"up","why":"Recovery as a premium social space"}
-     ]},
-    {"id":"construction","name":"Construction & Trades","color":"#8D99AE","trend":"up","heat":71,
-     "gaps":["Subcontractor sourcing and vetting is still word of mouth","Estimating is manual for most contractors under $10M"],
-     "companies":[
-       {"name":"Handoff","what":"AI estimating for remodelers","stage":"Early","signal":"Growing contractor base","trend":"up","why":"AI hits the estimate — the bottleneck for every small contractor"},
-       {"name":"Renovate Robotics","what":"Roofing robots","stage":"Early","signal":"Pilots with roofers","trend":"up","why":"Labor shortage makes exterior robotics fundable"}
-     ]},
-    {"id":"media","name":"Media & Creators","color":"#FFD166","trend":"flat","heat":57,
-     "gaps":["Local news is dead — hyperlocal alerts and info apps have room","B2B creators (trades, ops) are underserved by tools"],
-     "companies":[
-       {"name":"Beehiiv","what":"Newsletter platform","stage":"Growth","signal":"Adding ads network and websites","trend":"up","why":"Owned audience is the durable creator asset"},
-       {"name":"Citizen","what":"Live safety alerts app","stage":"Late-stage","signal":"Adding AI incident summaries","trend":"flat","why":"Proves demand for real-time local info"}
-     ]},
-    {"id":"mobility","name":"Mobility & Auto","color":"#06D6A0","trend":"flat","heat":54,
-     "gaps":["Fleet maintenance for small service companies is a whiteboard","EV charging at multifamily and commercial buildings is unsolved"],
-     "companies":[
-       {"name":"Slate Auto","what":"$20K bare-bones electric truck","stage":"Growth (pre-delivery)","signal":"Huge reservation count","trend":"up","why":"Cheap and simple can win against feature bloat"},
-       {"name":"Waymo","what":"Robotaxi","stage":"Alphabet","signal":"Expanding to new metros incl. Phoenix growth","trend":"up","why":"Not small, but changes every local transport business"}
-     ]}
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "color": "#FF6B3D",
+      "trend": "up",
+      "heat": 78,
+      "gaps": [
+        "'Zero sugar' is turning into a legal liability — allulose class actions hit Liquid Death and David within two weeks. No functional brand has a litigation-proof sweetener story yet.",
+        "Protein soda is being won on distribution velocity, not product. SkyPop hit 10,000 doors in eight months on taste alone. There is no premium clean-label protein soda aimed at the Olipop buyer.",
+        "Hemp/THC beverage rules are whipsawing operators — Congress passed only a one-month extension to Dec 11 — and brands are hedging into kava and kanna with no dosing standard and no trusted brand.",
+        "Adult non-alc is still branded as 'beer without beer.' Liquid Death's founder went outside his own brand to Sazerac for canned bubbly — the gap is adult-feeling non-beer formats that don't read as health products."
+      ],
+      "companies": [
+        {
+          "name": "Medici Brands (David Protein, HallPass)",
+          "what": "Better-for-you protein food and beverage holdco",
+          "stage": "Series B",
+          "signal": "Raised $250M Series B at a $2.25B valuation to scale David Protein and HallPass and launch a chips line (Sep 2, 2026)",
+          "trend": "up",
+          "why": "Biggest consumer round of the week — late-stage capital is funding multi-brand holdcos, not single-SKU brands.",
+          "source": "BevNET / Nosh"
+        },
+        {
+          "name": "SkyPop",
+          "what": "Protein soda, rebranded from Don't Quit",
+          "stage": "Private, KDP-distributed",
+          "signal": "Hit 10,000 retail doors in its first eight months post-rebrand, pitching taste over function (Sep 4, 2026)",
+          "trend": "up",
+          "why": "Fastest door ramp in functional soda this year — a distribution partner plus a taste-first message now beats a gut-health narrative.",
+          "source": "BevNET"
+        },
+        {
+          "name": "Liquid Death",
+          "what": "Canned water and iced tea, horror-brand marketing",
+          "stage": "Late-stage private (~$1.4B)",
+          "signal": "Founder Mike Cessario launched Mr. Fancy canned 'American Bubbly' with Sazerac (Sep 3, 2026); core brand facing allulose class actions over 'zero sugar' energy claims (Aug 26, 2026)",
+          "trend": "flat",
+          "why": "The founder building his next act inside a legacy partner while the brand absorbs label litigation — both the template and the warning for marketing-led scaling.",
+          "source": "Brewbound / BevNET"
+        },
+        {
+          "name": "Olipop",
+          "what": "Prebiotic functional soda",
+          "stage": "Series C (~$1.85B)",
+          "signal": "Quiet week; last move was Christian Patino Webb (ex-Electrolit) taking over as CEO with founder Ben Goodwin shifting to innovation (Aug 11, 2026)",
+          "trend": "flat",
+          "why": "A CEO handoff plus SkyPop's 10,000-door sprint means the category leader is now defending, not defining, functional soda.",
+          "source": "BevNET"
+        },
+        {
+          "name": "Athletic Brewing",
+          "what": "Non-alcoholic craft beer",
+          "stage": "Late-stage private (~$800M)",
+          "signal": "Became official NA beer of MetLife Stadium, the Giants and the Jets (Aug 19, 2026); no news in the last 7 days",
+          "trend": "flat",
+          "why": "Venue pouring rights, not retail shelf, is where the adult non-alc occasion actually gets won.",
+          "source": "ROI-NJ"
+        }
+      ]
+    },
+    {
+      "id": "consumer-products",
+      "name": "Consumer Products",
+      "color": "#FFC53D",
+      "trend": "flat",
+      "heat": 52,
+      "gaps": [
+        "This week's capital was exit capital, not growth capital — three deals in three days (Truly, Untuckit, J. Peterman folding) and essentially zero new venture rounds. Mid-size DTC has no buyer but a strategic roll-up.",
+        "Hangover prevention is a real category with no leader — Undo raised a $1M seed and got into 889 Targets. Whoever brands the occasion properly takes it.",
+        "Everyday-carry and home-filtration brands (Ridge, Jolie) went fully silent while capital concentrated in beauty and supplements — durable-goods DTC with no news cadence becomes a commodity.",
+        "Discovery has moved to physical moments — state fairs, US Open pop-ups, sample sales selling out early — while cheap digital acquisition is gone and the physical replacement is completely unsystematized."
+      ],
+      "companies": [
+        {
+          "name": "Undo",
+          "what": "Hangover-prevention supplement shot",
+          "stage": "Seed ($1M)",
+          "signal": "Expanded into 889 Target locations plus permanent checkout placement at Wynn's Encore Beach Club and MGM resorts; sampled 4,000 people over Labor Day weekend (Sep 3, 2026)",
+          "trend": "up",
+          "why": "A $1M seed bought national Target distribution — occasion-based placement still beats paid acquisition for a physical product.",
+          "source": "Modern Retail"
+        },
+        {
+          "name": "Truly Beauty",
+          "what": "Vegan body and skin care, TikTok-native",
+          "stage": "Acquired by Dollar Shave Club",
+          "signal": "Acquired by Dollar Shave Club, terms undisclosed; both brands keep distinct identities as DSC builds a multi-brand personal care platform (Sep 1, 2026)",
+          "trend": "up",
+          "why": "The clearest exit path right now for a social-first brand is becoming brand #2 inside someone else's platform.",
+          "source": "Retail Dive"
+        },
+        {
+          "name": "Untuckit",
+          "what": "Untucked-fit men's shirts, DTC-turned-omnichannel",
+          "stage": "Acquired by Randa Apparel",
+          "signal": "Acquired by Randa Apparel & Accessories, to run standalone with access to Randa's sourcing and retail relationships (Sep 1, 2026)",
+          "trend": "flat",
+          "why": "A first-wave DTC brand tapping out for sourcing and wholesale muscle — exactly what founder-led DTC consistently fails to build in-house.",
+          "source": "Retail Dive / WWD"
+        },
+        {
+          "name": "Ridge",
+          "what": "Minimalist metal wallets and everyday carry",
+          "stage": "Bootstrapped / PE-backed",
+          "signal": "No funding, launch or distribution news in the last 7 days; last structural move remains MKBHD joining as board member and equity partner (Feb 2024)",
+          "trend": "flat",
+          "why": "Profitable and quiet in a week where every peer got acquired — the creator-equity structure is the real asset and it hasn't been refreshed in over a year.",
+          "source": "Business Wire"
+        },
+        {
+          "name": "Jolie",
+          "what": "Filtered showerheads for skin and hair",
+          "stage": "Series A",
+          "signal": "No funding, launch or retail news in the last 7 days; no 2026 activity on public profiles",
+          "trend": "flat",
+          "why": "Wellness hardware got no capital and no press this week while ingestibles did — 'beauty device' is currently harder to fund than a supplement.",
+          "source": "PitchBook / Tracxn"
+        }
+      ]
+    },
+    {
+      "id": "home-services",
+      "name": "Home Services",
+      "color": "#3DDC97",
+      "trend": "flat",
+      "heat": 58,
+      "gaps": [
+        "Zero home-services funding, launches or M&A landed this week. All 2026 capital (Avoca $125M, Probook $40M, Netic $23M) went to residential front office — missed calls, dispatch, booking. Commercial recurring-service contracts have no venture-backed software at all.",
+        "Every mainstream FSM (Jobber, Housecall Pro, Workiz) models a job as one address plus one visit. None handle multi-day, multi-elevation, swing-stage or rope-access work with per-drop progress — commercial exterior crews still run spreadsheets and text threads.",
+        "Safety and compliance paperwork — anchor/davit certs, rope-access logs, OSHA 1910.27 records, COIs, swing-stage permits — is the actual gate to Class A high-rise work and has no software category in 2026.",
+        "Property and facility managers have no trustworthy marketplace for insured, certified exterior contractors. Angi and Thumbtack are residential-only and adversarially priced; the commercial equivalent doesn't exist."
+      ],
+      "companies": [
+        {
+          "name": "Jobber",
+          "what": "Field service software for home and commercial service SMBs",
+          "stage": "Series D, late-stage private",
+          "signal": "Awarded nine blue-collar entrepreneurs Jobber Grants including a first $100K top award (Aug 25, 2026); hosting Jobber Now, its first in-person conference, Sep 23-24 in Austin with promised AI launches",
+          "trend": "up",
+          "why": "It is pre-announcing an AI drop in under three weeks — cheapest way to see where SMB field ops tooling is going before you commit to a stack.",
+          "source": "PR Newswire"
+        },
+        {
+          "name": "Lucid Bots",
+          "what": "Autonomous exterior-cleaning drones sold to service operators",
+          "stage": "Series B ($20M)",
+          "signal": "Raised $20M Series B to scale its exterior-cleaning drone platform, with its operator network at ~$75M combined revenue (Mar 25, 2026); quiet this week",
+          "trend": "up",
+          "why": "The most direct venture-backed threat and opportunity to a high-rise exterior business — it's building the operator network, not just hardware.",
+          "source": "The Robot Report"
+        },
+        {
+          "name": "Avoca",
+          "what": "AI voice agents for the HVAC/plumbing/electrical front office",
+          "stage": "Series B, ~$1B valuation",
+          "signal": "Raised $125M+ at a $1B valuation (Kleiner Perkins-backed) to automate missed calls and booking for contractors; no news this week",
+          "trend": "up",
+          "why": "Answering the phone is now a billion-dollar software category — and that agent layer is one vertical away from commercial bid intake and RFP response.",
+          "source": "Fortune"
+        },
+        {
+          "name": "Probook",
+          "what": "AI operating system and dispatch for home services contractors",
+          "stage": "Series A/B ($40M)",
+          "signal": "Raised $40M from a16z and Sequoia to build an AI dispatch layer for plumbers, electricians and HVAC crews; founder came out of a pressure-washing business (Jun 23, 2026)",
+          "trend": "up",
+          "why": "Founder-operator playbook validated at the top of venture — an owner who built software for his own trade raised from a16z and Sequoia. Study the wedge.",
+          "source": "Fortune"
+        },
+        {
+          "name": "Frontdoor",
+          "what": "Home warranty plus on-demand home repair marketplace",
+          "stage": "Public (NASDAQ: FTDR)",
+          "signal": "No announcements in the last 7 days; last event was Q2 2026 earnings (Aug 6, 2026), still bolting on-demand repair onto the warranty book",
+          "trend": "flat",
+          "why": "The only public comp for demand aggregation in home services is standing still — the contested ground has moved to distribution, not software.",
+          "source": "StockTitan"
+        }
+      ]
+    },
+    {
+      "id": "restaurants",
+      "name": "Restaurants & Food",
+      "color": "#FF4D6D",
+      "trend": "up",
+      "heat": 71,
+      "gaps": [
+        "Distressed drive-thru real estate is the cheapest unit growth in the category and nobody has a systematic playbook — 7 Brew paid $143M for 73 built-out Salad and Go sites (~$2M each), outbidding Dutch Bros. Every conversion-ready format should be shopping bankruptcy dockets.",
+        "Healthy fast casual has proven demand and a broken cost model — Salad and Go liquidating while Sweetgreen guides to negative comps. Nobody has solved produce cost plus prep labor under $12.",
+        "Emerging chains can reach private equity but not venture — Los Tacos No. 1's only path was TSG. There is no functioning early capital layer for 5-20 unit concepts, which forces founders to sell control early.",
+        "International QSR is entering the US direct rather than licensing (Korea's Twosome Place opens in DC next month) — arriving with brand equity but no US supply chain, franchising infrastructure or real estate bench. That's an operator-services gap."
+      ],
+      "companies": [
+        {
+          "name": "7 Brew Coffee",
+          "what": "Drive-thru-only specialty coffee chain",
+          "stage": "PE-backed private (Blackstone)",
+          "signal": "Won the Salad and Go bankruptcy auction with a $143M bid for 73 closed sites, outbidding Dutch Bros (Sep 1-2, 2026)",
+          "trend": "up",
+          "why": "Most instructive deal of the week: buying a failed competitor's built-out drive-thrus beats greenfield on both speed and cost.",
+          "source": "Restaurant Dive / QSR"
+        },
+        {
+          "name": "Los Tacos No. 1",
+          "what": "Tijuana-style taco concept out of NYC",
+          "stage": "PE-backed (TSG Consumer)",
+          "signal": "Secured a strategic investment from TSG Consumer Partners — backer of Crumbl and Dutch Bros — to expand beyond New York (Sep 3, 2026)",
+          "trend": "up",
+          "why": "A cult, high-AUV, few-unit concept cleared the capital hurdle that stops most of them — authenticity plus queues is now financeable without a franchising story.",
+          "source": "Nation's Restaurant News"
+        },
+        {
+          "name": "Salad and Go",
+          "what": "Drive-thru healthy fast casual, sub-$7 salads",
+          "stage": "Bankrupt / liquidating",
+          "signal": "Bankruptcy auction closed with 7 Brew taking 73 shuttered locations for $143M; Dutch Bros underbid (Sep 1-2, 2026)",
+          "trend": "down",
+          "why": "Cautionary case of the week — cheap healthy food at drive-thru speed built real demand and still couldn't carry its cost structure.",
+          "source": "Restaurant Dive"
+        },
+        {
+          "name": "Cava",
+          "what": "Mediterranean fast casual",
+          "stage": "Public (NYSE: CAVA)",
+          "signal": "No news this week; Q2 2026 (Aug 11) showed revenue +31.3% to $365.4M, same-restaurant sales +9.0% on 5.3% traffic growth, guidance raised to 75-77 net new restaurants",
+          "trend": "up",
+          "why": "The only fast casual posting positive traffic while salad collapses — the difference is hot, customizable and protein-forward, not healthier.",
+          "source": "Cava IR"
+        },
+        {
+          "name": "Sweetgreen",
+          "what": "Salad-led fast casual",
+          "stage": "Public (NYSE: SG)",
+          "signal": "Guidance stands at same-store sales down 2-4% for 2026 with more closures planned as leases expire; shares down ~89% since IPO",
+          "trend": "down",
+          "why": "Two salad chains in distress in the same week — one bankrupt, one guiding down — is a category verdict, not two company stories.",
+          "source": "Restaurant Dive / TheStreet"
+        },
+        {
+          "name": "The Twosome Place",
+          "what": "Korean premium bakery-cafe chain",
+          "stage": "Private (Korean-owned, US entry)",
+          "signal": "Announced US debut in the Washington, DC area next month, its first American market (Sep 4, 2026)",
+          "trend": "up",
+          "why": "Asian bakery-cafe is the fastest-growing entrant format in US fast casual, and it's arriving direct — the coffee-and-pastry daypart is about to get crowded.",
+          "source": "Nation's Restaurant News"
+        }
+      ]
+    },
+    {
+      "id": "health-wearables",
+      "name": "Health & Wearables",
+      "color": "#5B8CFF",
+      "trend": "up",
+      "heat": 93,
+      "gaps": [
+        "Oura's S-1 shows the real moat is subscription retention — 5M paid members, 85% weighted 12-month retention — yet no rival has shipped a credible premium no-subscription ring. That positioning is wide open now the economics are public.",
+        "Ultrahuman says it will open its rings to third-party developers by end of September. There is no ring SDK, app store, or dev distribution layer for anyone to build on — that whole infrastructure tier doesn't exist.",
+        "Nobody owns wearable-signal-to-billable-care. Function and Sword are buying the care layer top-down; the connective tissue from consumer wearable data into a reimbursable clinical pathway is unbuilt.",
+        "Accuracy claims are now legal risk, not a footnote — Oura disclosed a proposed class action over sleep-tracking accuracy in its IPO filing. Third-party validation tooling for consumer biometrics is missing."
+      ],
+      "companies": [
+        {
+          "name": "Oura",
+          "what": "Smart ring plus health subscription",
+          "stage": "IPO filed (targeting $16B+)",
+          "signal": "Filed publicly for a US IPO seeking ~$3B (Sep 3, 2026): revenue up from $697M to $1.2B for the nine months ended June 30, 3.6M rings sold, 5M paid subscribers, 85% 12-month retention — plus a disclosed class action over sleep-accuracy claims",
+          "trend": "up",
+          "why": "First fully public unit-economics teardown of a consumer wearable subscription — the benchmark your own attach rate and churn get judged against.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Ultrahuman",
+          "what": "Smart ring, metabolic and sleep tracking",
+          "stage": "Series B ext., $365M valuation",
+          "signal": "Raised $70M at a $365M valuation led by Qualcomm Ventures with Labcorp and Alpha Wave (Sep 3, 2026); $140M ARR, ~800K rings sold, Qualcomm-powered compute ring and third-party developer support coming",
+          "trend": "up",
+          "why": "Same day as Oura's S-1, the challenger repositioned the ring from a sensor to an input device — a different, currently unclaimed category.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Eight Sleep",
+          "what": "Smart mattress cover and sleep hardware",
+          "stage": "Private, ~$1.5B",
+          "signal": "Launched 'Biological Age' with Bryan Johnson's Immortals (Sep 3, 2026) — weekly Speed of Aging scores trained on 100,000+ participants and 2.7M hours of biometrics, requiring no wearable or lab panel",
+          "trend": "up",
+          "why": "A non-wearable is shipping a longevity score with no blood work — the biological-age layer is a software land grab, contestable from any passive sensor.",
+          "source": "Athletech News"
+        },
+        {
+          "name": "Sword Health",
+          "what": "AI musculoskeletal and mental health care",
+          "stage": "Private, ~$4B",
+          "signal": "Regulatory filing shows Sword acquiring Headspace all-cash for up to $300M, close expected Sep 14, 2026 — a steep markdown from Headspace Health's peak (surfaced Aug 25-26, 2026)",
+          "trend": "up",
+          "why": "2021-cohort digital health assets are clearing at fractions of peak — if you're buying an adjacency instead of building one, the price window is open now.",
+          "source": "STAT / Axios Pro"
+        },
+        {
+          "name": "Function Health",
+          "what": "Consumer lab testing plus preventive care membership",
+          "stage": "$450M growth financing",
+          "signal": "Announced $450M from General Catalyst's Customer Value Fund (Jul 31, 2026), structured as customer-acquisition capital rather than dilutive equity",
+          "trend": "up",
+          "why": "If your CAC payback is provable, there is now a non-dilutive $100M+ path in consumer health that didn't exist two years ago.",
+          "source": "Fierce Healthcare"
+        },
+        {
+          "name": "Whoop",
+          "what": "Screenless subscription fitness band",
+          "stage": "Series G, $10.1B, IPO-bound",
+          "signal": "Quiet week; raised $575M at $10.1B (Mar 31, 2026) with an IPO named as the next step, and reports surfaced Aug 11 that Apple is developing a screenless wearable aimed at Whoop and Oura",
+          "trend": "flat",
+          "why": "A silent week while Oura filed and Ultrahuman raised, with a credible Apple entrant circling — the silence is the signal.",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "id": "fintech",
+      "name": "Fintech",
+      "color": "#9B6BFF",
+      "trend": "up",
+      "heat": 82,
+      "gaps": [
+        "Chat-native money movement is proven abroad and absent for US SMBs — Felix has processed $8B+ over WhatsApp and just raised $200M. No equivalent exists for a US services business collecting invoices over SMS instead of a portal.",
+        "Dormant business-account activation is now a named, funded problem (Swaystack) — banks pay $400+ per checking account and roughly half go inactive within a year. Onboarding-to-first-transaction tooling is wide open.",
+        "AI-native insurance back office is funded hard (Axle $17.5M) but aimed at carriers. Nobody is building the small-contractor side — COI tracking, claims paperwork, certificate renewals — where the pain is manual and willingness to pay is real.",
+        "Platform payout in-housing is live: X moved all US creator payouts off Stripe to X Money. Mid-size platforms wanting the same control without building rails have no obvious white-label vendor."
+      ],
+      "companies": [
+        {
+          "name": "Felix (Felix Pago)",
+          "what": "WhatsApp-based remittances and consumer finance",
+          "stage": "Series C ($200M: $87M equity + $113M credit)",
+          "signal": "Raised $200M led by a16z with QED and General Catalyst's Customer Value Fund to expand into AI lending and savings (Sep 1-4, 2026); $8B+ processed, 6M+ users across 11 countries",
+          "trend": "up",
+          "why": "The whole product is a chat thread plus rails — strongest evidence yet that conversational money movement beats app downloads for non-desk customers.",
+          "source": "FinTech Futures"
+        },
+        {
+          "name": "TabaPay",
+          "what": "Card payment infrastructure and instant payouts",
+          "stage": "Growth ($155M)",
+          "signal": "Raised $155M led by FTV Capital and announced the acquisition of Transact Bank NA, closing Q4 2026 (Sep 4, 2026); on track for $100B+ volume this year",
+          "trend": "up",
+          "why": "A processor buying its own bank charter is the year's clearest sign that owning rails beats renting them — payout pricing moves as a result.",
+          "source": "FinTech Futures"
+        },
+        {
+          "name": "Axle AI",
+          "what": "AI-native backend for insurance workflows and claims",
+          "stage": "Series A ($17.5M)",
+          "signal": "Raised $17.5M Series A led by Base10 with Gradient Ventures and Y Combinator (Sep 3, 2026); clients reportedly recovered $220M in lost revenue",
+          "trend": "up",
+          "why": "Vertical AI sold on recovered revenue rather than productivity — that's the pitch structure that closes with non-technical buyers.",
+          "source": "TechStartups"
+        },
+        {
+          "name": "Swaystack",
+          "what": "Activating dormant business bank accounts",
+          "stage": "Early / strategic investment",
+          "signal": "Took a strategic investment from the Btech Consortium Fund (week of Sep 4, 2026), framed against banks spending $400+ per checking account while half go inactive within a year",
+          "trend": "up",
+          "why": "Tiny company attacking a large, boring, quantified leak — exactly the profile a small software project can win without competing on capital.",
+          "source": "FinTech Global"
+        },
+        {
+          "name": "OpenPayd",
+          "what": "Embedded finance and money-transmission infrastructure",
+          "stage": "Pre-SPAC ($1.145B implied)",
+          "signal": "Merged with MSB USA ahead of a planned $1.145B SPAC and Nasdaq listing later in 2026, adding 43 state money transmitter licenses (Sep 4, 2026)",
+          "trend": "up",
+          "why": "Licenses, not technology, are the moat in US money movement — this deal prices that publicly.",
+          "source": "FinTech Futures"
+        },
+        {
+          "name": "Mercury",
+          "what": "Startup and SMB business banking",
+          "stage": "Series D, $5.2B",
+          "signal": "No news this week; last verified is $200M Series D at $5.2B (May 20, 2026) following OCC conditional approval to establish Mercury Bank, N.A. (Apr 27, 2026)",
+          "trend": "flat",
+          "why": "Watch the national charter — once it lands, Mercury stops renting a partner bank and its SMB pricing and product speed change materially.",
+          "source": "CNBC / Businesswire"
+        }
+      ]
+    },
+    {
+      "id": "ai-tools",
+      "name": "AI Tools",
+      "color": "#00C2FF",
+      "trend": "up",
+      "heat": 93,
+      "gaps": [
+        "The old tracked names are incumbents now — Cursor at $29.3B, Lovable at $13.3B, Harvey reportedly raising at $15.5B. The disruptor layer has moved down to seed and Series A, which is where the buildable ideas are.",
+        "Boring-industry vertical AI still prices at seed while horizontal agents price at unicorn multiples — this week's food-manufacturing compliance (Backbone) and ERP cleanup (Zeit) rounds are both European. The US SMB equivalents in field service, trades compliance and safety docs have no funded incumbent.",
+        "Nvidia's confirmed $12.9B Hugging Face buy leaves no vendor-neutral place to host, compare and evaluate open models — a neutral eval and registry layer is suddenly a category, not a feature.",
+        "Agent-reliability tooling is fragmenting fast (Resect $25M, Lasso $30M, AIR $50M) and every one sells to enterprise security teams. Nobody packages guardrails plus output-checking for a 5-50 person shop running agents against customer data."
+      ],
+      "companies": [
+        {
+          "name": "AfterQuery",
+          "what": "AI training data and expert evaluation sets",
+          "stage": "~$3.2B valuation",
+          "signal": "Became Y Combinator's fastest-ever unicorn at a $3.2B valuation (Sep 1, 2026)",
+          "trend": "up",
+          "why": "Money is moving off model-building and onto the unglamorous data and eval layer — the layer a domain operator can supply from real work product.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Wonderful",
+          "what": "Enterprise OS for coordinating AI agents across workflows",
+          "stage": "Series C ($550M at $5B post)",
+          "signal": "Raised $550M Series C led by Insight Partners with Salesforce Ventures, Index, IVP and Bessemer, more than doubling valuation to $5B in under six months (Sep 1-2, 2026)",
+          "trend": "up",
+          "why": "Agent orchestration just got a $5B anchor — anyone selling single-purpose agents needs an answer for where they sit inside someone else's OS.",
+          "source": "TechCrunch / TechStartups"
+        },
+        {
+          "name": "Zeit AI",
+          "what": "Autonomous data engineer for ERP/CRM cleanup and dashboards",
+          "stage": "Seed (~$5.4M)",
+          "signal": "Raised EUR 5M seed from Y Combinator, Oxford Seed Fund, Sequoia Scout and HP Ventures (Sep 3, 2026)",
+          "trend": "up",
+          "why": "Cleanest template for a side project: point an agent at a messy system of record and sell the cleanup, not the model. The US SMB version is unclaimed.",
+          "source": "TechStartups"
+        },
+        {
+          "name": "Backbone",
+          "what": "AI for food-manufacturing documentation and compliance",
+          "stage": "Pre-seed (~$4.3M)",
+          "signal": "Raised EUR 4M pre-seed from Pitchdrive, PROfounders and Passion Capital, with food producers Agristo and Darta co-investing (Sep 3, 2026)",
+          "trend": "up",
+          "why": "Strategic customers writing checks into a pre-seed compliance tool proves document-heavy trades will pay — same shape as COIs, safety docs and certifications.",
+          "source": "TechStartups"
+        },
+        {
+          "name": "Gimlet Labs",
+          "what": "AI compute orchestration software",
+          "stage": "Growth ($300M at $3B)",
+          "signal": "Raised $300M at a $3B valuation from a16z, Arm and M12 (Sep 4, 2026), one day after Nvidia confirmed its $12.9B acquisition of Hugging Face",
+          "trend": "up",
+          "why": "Nvidia owning Hugging Face makes model portability a buying criterion — design for swappable models in anything you ship.",
+          "source": "TechCrunch / TechStartups"
+        },
+        {
+          "name": "Resect AI",
+          "what": "Monitors and corrects LLM output to catch hallucinations",
+          "stage": "Seed/Series A ($25M)",
+          "signal": "Raised $25M from private equity backers (Sep 3, 2026)",
+          "trend": "up",
+          "why": "PE money in output-verification this early means buyers now treat AI error rates as operational liability — clients will start asking who checks your AI.",
+          "source": "TechStartups"
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics & Delivery",
+      "color": "#FF9F1C",
+      "trend": "flat",
+      "heat": 62,
+      "gaps": [
+        "No BVLOS rule plus a Zipline drone parachuting onto a Houston highway means third-party drone airspace safety and telemetry attestation is unbuilt — nobody sells independent incident audit or a 'black box' service for BVLOS fleets.",
+        "Sidewalk-robot city permitting is done ward-by-ward by hand. No standard municipal compliance, geofencing and insurance stack exists for the two-vendor-per-city pattern now emerging.",
+        "Uber exited Nigeria and Uganda outright on Sep 2, stranding courier supply and merchant demand in two large markets with no successor — a land-grab window measured in weeks.",
+        "Maritime retrofit decarb works at seed scale (Newlight cut fuel 24% on a real 8,500nm voyage) but has no financing wrapper — nobody underwrites fuel-savings-as-a-service against verified voyage telemetry."
+      ],
+      "companies": [
+        {
+          "name": "Zipline",
+          "what": "Autonomous drone delivery network",
+          "stage": "Late-stage private (~$7.6B)",
+          "signal": "A Platform 2 drone hit a midflight issue and deployed its emergency parachute onto Highway 6 near Houston (Sep 4, 2026), no injuries, cause undetermined — while Amazon Prime Air pushes toward ~500 US cities by December",
+          "trend": "flat",
+          "why": "First public failure of the 'safe by design' parachute pitch — how Zipline handles disclosure sets the regulatory ceiling for every drone founder.",
+          "source": "DroneXL"
+        },
+        {
+          "name": "Coco Robotics",
+          "what": "Sidewalk delivery robots for restaurants and retail",
+          "stage": "Growth ($80M strategic, Altman-backed)",
+          "signal": "Launched a 10-robot fleet in Hoboken's First Ward (Sep 4, 2026), half of a 20-robot city pilot approved unanimously Aug 12",
+          "trend": "up",
+          "why": "Cities are awarding sidewalk rights as split two-vendor pilots — winning the first ward is how you get the whole city, and that playbook is being written now.",
+          "source": "Hoodline"
+        },
+        {
+          "name": "Avride",
+          "what": "Autonomy stack for sidewalk bots and robotaxis",
+          "stage": "Private (Nebius spin-out)",
+          "signal": "Took the other 10 robots in Hoboken's First Ward pilot, running head-to-head against Coco on identical streets under identical rules (Sep 4, 2026)",
+          "trend": "up",
+          "why": "A rare same-city, same-week A/B of two autonomy stacks — the operating data becomes the reference other municipalities cite.",
+          "source": "Hoodline"
+        },
+        {
+          "name": "Arrive Logistics",
+          "what": "Tech-enabled truckload freight brokerage",
+          "stage": "PE-controlled as of this week",
+          "signal": "Mubadala Capital agreed to acquire a majority equity interest; Arrive plans ~1,000 new hires plus tech investment (Aug 31, 2026)",
+          "trend": "up",
+          "why": "Sovereign capital buying control and hiring into it — freight-tech exits are happening via majority recap, not IPO.",
+          "source": "FreightWaves"
+        },
+        {
+          "name": "Newlight",
+          "what": "Hydrogen fuel-injection retrofit for cargo ships",
+          "stage": "Seed ($9M)",
+          "signal": "Raised $9M seed after an 8,500nm Singapore-to-Ghana voyage cut fuel use 24% and CO2 28%; agreements signed to fit 12 vessels (Sep 1, 2026)",
+          "trend": "up",
+          "why": "A sub-two-week, no-dry-dock retrofit claiming ~$500K/vessel/year sells on payback math alone — template for any physical retrofit business.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Veho",
+          "what": "Crowdsourced last-mile parcel delivery for e-commerce brands",
+          "stage": "Unicorn (~$1.5B, ~120K drivers)",
+          "signal": "No news this week; appointed Chewy COO Scott Anderson to its board (Aug 26, 2026) after launching FlexSave discount tiers in February, while Uber's Sep 2 restructuring redirects spend toward couriers and merchants",
+          "trend": "flat",
+          "why": "A retail-ops COO on the board plus a price-defense product means Veho is optimizing margin, not land-grabbing — the category is maturing.",
+          "source": "Veho / FreightWaves"
+        }
+      ]
+    },
+    {
+      "id": "real-estate",
+      "name": "Real Estate & Proptech",
+      "color": "#2EC4B6",
+      "trend": "up",
+      "heat": 68,
+      "gaps": [
+        "EliseAI's Apollo automates the tenant and leasing side of a building. The vendor side — bidding, COI collection, scheduling exterior work, W-9s, invoice approval — is still email and PDFs, which is exactly where a services company gets designed out or paid in 90 days.",
+        "Proptech capital is narrowing: ~$8.7B YTD 2026 across 794 deals versus $12.3B in all of 2025. What's flowing goes to AI that cuts property operating costs — meaning your customer is being actively sold on squeezing vendor pricing this quarter.",
+        "Commercial facilities and vendor-management software is incumbent-owned (Building Engines, Angus) and widely disliked, with no venture-backed challenger launched this quarter. Unusually quiet moat for a category with this much dissatisfaction.",
+        "Nobody is packaging building-exterior condition data — glass, sealant failure, facade inspection, Local Law 11-style compliance history — into the property ops stack. A window cleaning company touches every square foot of that envelope annually and sells none of it."
+      ],
+      "companies": [
+        {
+          "name": "EliseAI",
+          "what": "AI leasing, maintenance and operations agent for multifamily",
+          "stage": "Late-stage private, reportedly raising at $3.7B",
+          "signal": "Launched Apollo, an agentic AI teammate that takes action across leasing, maintenance and operations under each user's permissions (Sep 3, 2026); reported in talks for ~$300M at $3.7B from a16z and Bessemer",
+          "trend": "up",
+          "why": "The most consequential item of the week for anyone selling services to apartment portfolios — the person approving your work order is being replaced by an agent.",
+          "source": "GlobeNewswire / Commercial Observer"
+        },
+        {
+          "name": "Orbital",
+          "what": "AI software for real estate lawyers and transaction teams",
+          "stage": "Series B ($60M)",
+          "signal": "Raised a $60M Series B led by Brighton Park Capital for AI handling real estate legal diligence and transaction workflow (Aug 26, 2026)",
+          "trend": "up",
+          "why": "Clearest read on where proptech dollars still clear: narrow, document-heavy, high-billable workflows — same shape as COI and compliance paperwork.",
+          "source": "Brighton Park Capital"
+        },
+        {
+          "name": "Real Brokerage",
+          "what": "Tech-led agent brokerage rolling up traditional franchises",
+          "stage": "Recently public (NASDAQ: REAX)",
+          "signal": "Agreed to acquire RE/MAX for $880M (Apr 27, 2026) and absorbed Flyhomes' consumer search tech; no news this week",
+          "trend": "up",
+          "why": "A sub-$5B disruptor buying a legacy franchise outright — the template for consolidating a fragmented service industry instead of out-marketing it.",
+          "source": "HousingWire"
+        },
+        {
+          "name": "Pacaso",
+          "what": "Fractional co-ownership of second homes",
+          "stage": "Private, pre-IPO",
+          "signal": "Reserved the Nasdaq ticker PCSO ahead of a potential listing, citing margin expansion and inventory efficiency; no announcements this week",
+          "trend": "flat",
+          "why": "A consumer marketplace grinding toward a listing on margin discipline rather than growth — the honest benchmark for what 'up and to the right' looks like in 2026.",
+          "source": "PR Newswire"
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Energy & Climate",
+      "color": "#7ED957",
+      "trend": "up",
+      "heat": 86,
+      "gaps": [
+        "Utilities are signing directly with pre-commercial fusion and geothermal developers (Madison Gas & Electric-Realta, Google-Fervo 396 MW). Nobody provides the independent technical and schedule diligence utilities and regulators need to price those agreements.",
+        "Behind-the-meter storage demand from data centers is forecast to grow ~5x by 2030 and the US just set a record grid-battery quarter — but interconnection queue navigation and large-load tariff modeling are still spreadsheet work at almost every developer.",
+        "Residential battery financing is the live experiment (PSE&G's New Jersey program) while Base Power vertically integrates. Third-party origination, servicing and securitization for utility-sponsored home-battery programs is wide open.",
+        "European grid-constraint software plus hardware is funded at small tickets (Octave EUR 10M) — a fragmented, profitable niche with no consolidator, unlike the US where AI-datacenter capital crowds everything out."
+      ],
+      "companies": [
+        {
+          "name": "Fervo Energy",
+          "what": "Enhanced next-gen geothermal power",
+          "stage": "Recently public (FRVO)",
+          "signal": "Signed a 396 MW power purchase agreement with Google for its Utah project — the largest next-gen geothermal deal ever (Sep 1, 2026)",
+          "trend": "up",
+          "why": "Hyperscaler PPAs now write the checks that used to require a growth round — a firm clean-power contract is the fastest path to bankability.",
+          "source": "Canary Media"
+        },
+        {
+          "name": "Realta Fusion",
+          "what": "Compact magnetic-mirror fusion",
+          "stage": "Venture-stage private",
+          "signal": "Announced a partnership with Madison Gas and Electric to explore a 200-MWe fusion plant in Wisconsin (Sep 3, 2026)",
+          "trend": "up",
+          "why": "Utilities are now the first customer for pre-commercial energy tech — an early utility MOU is becoming the credential that unlocks the next round.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Odyssey Energy Solutions",
+          "what": "DER financing and procurement platform for emerging markets",
+          "stage": "Growth ($74M)",
+          "signal": "Raised $74M to scale distributed renewable financing, connecting thousands of electrical contractors with capital and equipment suppliers (Sep 1, 2026)",
+          "trend": "up",
+          "why": "A marketplace that finances the installer rather than the end customer — capital-efficient wedge into markets US climate funds ignore.",
+          "source": "Latitude Media"
+        },
+        {
+          "name": "Octave.energy",
+          "what": "Battery storage plus energy-management software for constrained EU grids",
+          "stage": "EUR 10M round",
+          "signal": "Raised EUR 10M from SPDG Growth, imec.istart, BNP Paribas Fortis and KBC having deployed 200+ MWh and stayed profitable three years running (Sep 4, 2026)",
+          "trend": "up",
+          "why": "Profitable for three years before taking growth capital in a sector where everyone burns it — the counter-example on unit economics.",
+          "source": "TechStartups"
+        },
+        {
+          "name": "Base Power",
+          "what": "Home batteries plus retail electricity, Texas-first",
+          "stage": "Late-stage private (~$1B raised)",
+          "signal": "No news this week; raised $1B and launched the US-made 39.2 kWh Base Core battery in early August, while PSE&G's New Jersey home-battery financing program (Aug 31) shows utilities building the same channel",
+          "trend": "up",
+          "why": "The vertical model — own the battery, own the retail contract — is now being copied as a utility program. The moat is one quarter, not years.",
+          "source": "pv magazine USA / Canary Media"
+        },
+        {
+          "name": "Lunar Energy",
+          "what": "Home battery hardware plus AI virtual power plant software",
+          "stage": "$232M raised Feb 2026",
+          "signal": "Seven months of public silence since its $232M raise (Feb 4, 2026), while data-center-driven behind-the-meter battery demand is forecast to grow fivefold by 2030",
+          "trend": "flat",
+          "why": "Going quiet while Base Power raised $1B and shipped a bigger battery is a positioning gap a competitor or acquirer notices before the next round does.",
+          "source": "TechCrunch / Latitude Media"
+        }
+      ]
+    },
+    {
+      "id": "beauty",
+      "name": "Beauty & Personal Care",
+      "color": "#FF7EB6",
+      "trend": "up",
+      "heat": 71,
+      "gaps": [
+        "This week was exits and roll-ups only — TSG bought Saltair, Dollar Shave Club bought Truly, Skyline bought Lumin and Meridian, MarcyPen emerged as lead bidder for LVMH's Fenty stake — with essentially zero primary venture rounds. Bootstrap-to-profitable is the only funded path.",
+        "TikTok-affiliate-native body care is the acquisition target of choice (Truly: 100,000+ affiliates, 1.5M TikTok Shop units, $100M+ in 2025 sales) — yet tooling to recruit, pay and manage affiliate armies at that scale is homegrown at every brand doing it.",
+        "Mass-channel wellness-adjacent personal care is the fastest open lane: Wizard Wellness ran a beauty playbook into 3,100 Walmart and CVS doors within nine months. The same move is unmade in oral, ear, eye and scalp care.",
+        "Aesthetics and medspa produced zero trade coverage this week despite persistent demand — the category's unit economics are unresolved and venture has stepped back."
+      ],
+      "companies": [
+        {
+          "name": "Rhode",
+          "what": "Minimalist skincare and makeup",
+          "stage": "Acquired by e.l.f. Beauty ($1B, 2025)",
+          "signal": "Announced it launches at Sephora across 19 new European markets on Sep 30, 2026 (announced Aug 31), expanding from US/UK/Canada with EU-exclusive limited editions",
+          "trend": "up",
+          "why": "A 19-market simultaneous retail launch is the new speed benchmark for a DTC-born brand — and it happened under an acquirer, which is the argument for selling.",
+          "source": "e.l.f. Beauty IR"
+        },
+        {
+          "name": "Truly Beauty",
+          "what": "TikTok-native body care and skincare",
+          "stage": "Acquired by Dollar Shave Club",
+          "signal": "Acquired as the first asset in a multi-brand personal care platform (week ending Sep 6, 2026); $100M+ profitable sales in 2025, 100,000+ affiliates, in Ulta, Walmart, Target, CVS, Boots and TJX",
+          "trend": "up",
+          "why": "A profitable $100M affiliate-led body-care brand is the most liquid asset class in beauty — the exact profile buyers are underwriting.",
+          "source": "Beauty Independent"
+        },
+        {
+          "name": "Saltair",
+          "what": "Affordable prestige body care",
+          "stage": "Acquired by TSG Consumer",
+          "signal": "Acquired by TSG Consumer, the firm's latest in a run of consumer beauty acquisitions (week ending Sep 6, 2026)",
+          "trend": "up",
+          "why": "Second body-care exit in a single week — if you're in body care you're building toward a sale, not a Series B, and pricing power sits with the buyer.",
+          "source": "Beauty Independent"
+        },
+        {
+          "name": "Wizard Wellness",
+          "what": "Drug-free microbiome nasal and allergy care",
+          "stage": "Early, founder-led",
+          "signal": "Profiled Sep 3, 2026 on reaching Walmart, CVS and Target within nine months of its January debut — 3,100 Walmart and CVS doors",
+          "trend": "up",
+          "why": "Nine months from launch to 3,100 mass doors proves the beauty go-to-market motion transfers cleanly into adjacent OTC aisles nobody defends.",
+          "source": "Glossy"
+        },
+        {
+          "name": "Fenty Beauty",
+          "what": "Inclusive-shade prestige makeup",
+          "stage": "50% LVMH stake in sale process",
+          "signal": "Jay-Z's MarcyPen Capital Partners emerged as a strong contender for LVMH's 50% stake, with Evercore running the process; ~$450M net sales in 2024 at an estimated $1-2B valuation (week ending Sep 6, 2026)",
+          "trend": "down",
+          "why": "The most famous celebrity beauty brand repricing well below its peak is the honest ceiling check on celebrity-brand multiples.",
+          "source": "Beauty Independent"
+        },
+        {
+          "name": "Ever/Body",
+          "what": "Cosmetic dermatology and medspa chain",
+          "stage": "VC-backed private",
+          "signal": "No news and no substantive trade coverage in the last 7 days; the aesthetics/medspa category produced zero deal or expansion headlines this week",
+          "trend": "flat",
+          "why": "A demand-rich category going fully dark usually means the unit economics haven't cleared — diligence before assuming medspa is an easy adjacency.",
+          "source": "Beauty Independent / Glossy"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Hospitality",
+      "color": "#4CC9F0",
+      "trend": "flat",
+      "heat": 41,
+      "gaps": [
+        "AI trip planning has no proven monetization — investors are now explicitly telling founders they don't want to hear 'AI-native platform,' they want a business model. The gap is distribution and take-rate, not the planning UX.",
+        "Alternative payment rails in travel are unbuilt: Laters says most of its booking volume already settles outside the card networks, yet no major OTA supports BNPL or crypto natively.",
+        "Short-term-rental turnover ops still run on WhatsApp and spreadsheets — Piney nearly quadrupled properties served in under two years purely by automating cleaning QA.",
+        "The mid-market extended-stay slot Sonder vacated (~10,000 units, wound down Nov 2025 after Marriott terminated) still has no venture-backed successor."
+      ],
+      "companies": [
+        {
+          "name": "Laters.com",
+          "what": "Payments-first flight OTA using BNPL, installments and crypto instead of cards",
+          "stage": "Seed ($1.5M)",
+          "signal": "Raised $1.5M seed led by XBO Ventures (Sep 3, 2026); rebranded from Fly Fairly in June after acquiring discovery engine LFG",
+          "trend": "up",
+          "why": "The wedge into travel is now the payment rail, not the search box — card-network economics are the soft underbelly of every incumbent OTA.",
+          "source": "PhocusWire"
+        },
+        {
+          "name": "Piney",
+          "what": "AI ops platform for short- and mid-term rentals; reviews cleaner photos in real time",
+          "stage": "Seed (EUR 1.6M)",
+          "signal": "Raised EUR 1.6M led by Uni.fund with 33East (Sep 3, 2026); nearly quadrupled properties served in under two years and launched Miami, its first market outside Europe",
+          "trend": "up",
+          "why": "Boring back-office ops is where travel capital actually clears — a defensible, non-hype wedge with real operating leverage.",
+          "source": "EU-Startups"
+        },
+        {
+          "name": "PassHub",
+          "what": "Brazil-based B2B distribution platform for travel agencies",
+          "stage": "Pre-seed ($1.5M)",
+          "signal": "Secured $1.5M pre-seed to build booking infrastructure for Brazilian travel agencies (Sep 1, 2026)",
+          "trend": "up",
+          "why": "LatAm agency distribution is a large, unglamorous market where US and EU incumbents have no product — classic geographic arbitrage.",
+          "source": "PhocusWire"
+        },
+        {
+          "name": "Soar",
+          "what": "AI trip manager that reads your email and auto-builds itineraries",
+          "stage": "Early / pre-seed",
+          "signal": "Profiled in PhocusWire's Startup Stage (Aug 31, 2026) for connecting to email and assembling itineraries with no manual entry",
+          "trend": "flat",
+          "why": "Inbox-as-data-source sidesteps the cold-start problem every AI trip planner has — but sits directly in Google's and the airlines' path.",
+          "source": "PhocusWire"
+        },
+        {
+          "name": "Mindtrip",
+          "what": "AI-native travel planning and booking assistant",
+          "stage": "Series A+",
+          "signal": "No news this week; last milestone was unveiling AI travel and events features alongside investments from Amex Ventures, Capital One Ventures and United Airlines Ventures (Dec 8, 2025)",
+          "trend": "flat",
+          "why": "Strategic money is distribution insurance, but the investor backlash against AI-native travel means the next round gets priced on take-rate, not usage.",
+          "source": "Business Wire"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "color": "#B5179E",
+      "trend": "down",
+      "heat": 27,
+      "gaps": [
+        "There is no compliance or gating layer for the new district AI rules — NYC is disabling AI features across 38 citywide edtech contracts and will discontinue products where AI can't be turned off. Nobody sells grade-band AI gating as a product.",
+        "Teacher-facing AI is being commoditized to $0 by the model labs — Anthropic opened free Claude for Teachers Enterprise to US districts (Aug 28) and OpenAI extended ChatGPT for Teachers to 55 more school systems free through June 2028 (Sep 1). Prompt libraries are no longer a business.",
+        "No independent efficacy evidence exists — Texas rejected Alpha School's charter calling its model 'untested.' Districts have no third-party outcome verification to buy.",
+        "Voucher/ESA eligibility plumbing is an unbuilt business: Alpha quadrupled its Texas campuses by routing through the state voucher program after its charter failed, and nobody sells those enrollment rails.",
+        "The under-13 market closed in the two largest US districts on the same day (NYC and LAUSD, Sep 2) — any K-8 consumer AI learning product needs a pivot to high school or admin workflows."
+      ],
+      "companies": [
+        {
+          "name": "Alpha School",
+          "what": "Private school chain where AI teaches core subjects in ~2 hours/day",
+          "stage": "Private, ~$1B backing",
+          "signal": "After Texas rejected its charter bid, Alpha routed through the state voucher program and quadrupled its Texas campuses to 30+ publicly-funded-eligible locations within a year; now in 17 states (Sep 2, 2026)",
+          "trend": "up",
+          "why": "When the regulator says no, find the funding channel with different criteria — policy arbitrage is a bigger growth lever in education right now than product.",
+          "source": "Texas Tribune"
+        },
+        {
+          "name": "MagicSchool AI",
+          "what": "AI assistant suite for teachers — lesson planning, differentiation, grading",
+          "stage": "Series B (~$63M)",
+          "signal": "Squeezed from both sides in one week: Anthropic launched free Claude for Teachers Enterprise for US districts (Aug 28) and OpenAI expanded ChatGPT for Teachers to 55 more school systems free through June 2028 (Sep 1)",
+          "trend": "down",
+          "why": "When both frontier labs give your core product away free with SSO and district controls in the same week, the only surviving moat is procurement, data agreements and evidence.",
+          "source": "EdTech Innovation Hub"
+        },
+        {
+          "name": "Amira Learning",
+          "what": "AI reading tutor that listens to students read aloud",
+          "stage": "Series B+",
+          "signal": "Named Sep 4, 2026 as one of two vendors publicly identified in NYC's contract sweep — deployed in 222 NYC schools as the city disables AI features across 38 contracts",
+          "trend": "down",
+          "why": "Concentration risk made concrete: one district policy change strands a 222-school deployment overnight regardless of product quality.",
+          "source": "Impact AI"
+        },
+        {
+          "name": "Synthesis",
+          "what": "AI math tutor and simulation learning for K-8, sold to families",
+          "stage": "Series A",
+          "signal": "Directly exposed by NYC's Sep 2 moratorium banning student-facing generative AI for ~600,000 Pre-K-8 students for a year; LAUSD confirmed it already blocks all student-facing gen AI on district devices",
+          "trend": "down",
+          "why": "Direct-to-family just became the only viable K-8 channel in major metros — a school-distribution GTM is dead in NYC and LA simultaneously.",
+          "source": "NYC Mayor's Office"
+        },
+        {
+          "name": "Sora Schools",
+          "what": "Online project-based middle and high school",
+          "stage": "Series A ($31M total)",
+          "signal": "Raised $10M led by Union Square Ventures and General Catalyst (Jan 12, 2026) for private schools, public partnerships, microschools and after-school programs",
+          "trend": "flat",
+          "why": "The money went to a school operator, not a software vendor — when tools get commoditized, owning enrollment and tuition is the durable position.",
+          "source": "EdTech Innovation Hub"
+        }
+      ]
+    },
+    {
+      "id": "pets",
+      "name": "Pets",
+      "color": "#F4A261",
+      "trend": "flat",
+      "heat": 58,
+      "gaps": [
+        "Fresh pet food flipped from a startup category to an exit category — Ollie sold to Spain's Agrolimen and Golden Pet Brands hired Morgan Stanley and Barclays for a $1B+ listing. New entrants now compete against strategics who own the cold chain; the opening is formats that don't need one.",
+        "Private equity is buying the supplement supply side, not brands — Blue Sea acquired soft-chew and dental manufacturer CompletePet this week. Co-man capacity is consolidating, which will squeeze emerging brands' COGS and lead times.",
+        "Premium vet consolidation is mid-flight and under-tooled — Bond Vet and Small Door merged into a 55-clinic network, but clinic software, staffing marketplaces and post-merger ops remain unbuilt.",
+        "AI pet diagnostics is under-commercialized standalone: Ollie absorbed DIG Labs in-house rather than buying from a vendor, and 55% of pet owners already consult AI for pet nutrition. No independent vet-validated consumer diagnostic layer exists."
+      ],
+      "companies": [
+        {
+          "name": "Golden Pet Brands",
+          "what": "Freeze-dried and air-dried pet nutrition (Dr. Marty, Badlands Ranch)",
+          "stage": "Pre-IPO, targeting $1B+",
+          "signal": "Tapped Morgan Stanley and Barclays for a New York IPO at $1B+, possibly before year-end (Sep 2, 2026); recently hired ex-Mars/P&G exec Apu Mody as CEO",
+          "trend": "up",
+          "why": "Biggest pet event of the week and the clearest public comp for a DTC-born, celebrity-fronted pet nutrition platform.",
+          "source": "Reuters"
+        },
+        {
+          "name": "Ollie",
+          "what": "Fresh, human-grade dog food subscription",
+          "stage": "Acquired by Agrolimen",
+          "signal": "Acquired by Barcelona-based Agrolimen (Affinity Petcare, Nature's Variety), keeping brand, US HQ and CEO; earlier published its first 'State of Dogs' report from hundreds of thousands of health check-ins (Aug 5, 2026)",
+          "trend": "flat",
+          "why": "The winning fresh-food playbook is now proprietary health data plus a strategic buyer, not another growth round.",
+          "source": "PetfoodIndustry"
+        },
+        {
+          "name": "Bond Vet",
+          "what": "Urgent-care-first premium vet clinics",
+          "stage": "Merged, VC-backed",
+          "signal": "Merged with Small Door Veterinary in July 2026 to form a 55-clinic network, one of the largest premium vet networks in the US",
+          "trend": "up",
+          "why": "Two venture-backed chains combining rather than each raising again says clinic-level scale decides this category — and the ops software serving them is a real market.",
+          "source": "dvm360"
+        },
+        {
+          "name": "CompletePet",
+          "what": "Contract manufacturer of soft chews, topicals and dental",
+          "stage": "Acquired by Blue Sea Capital",
+          "signal": "Acquired by Blue Sea Capital after five years under Align Capital Partners (week ending Sep 6, 2026)",
+          "trend": "up",
+          "why": "PE is buying the picks and shovels of pet supplements before the brands — expect tighter co-man capacity and worse terms if you launch a chew brand this year.",
+          "source": "PetfoodIndustry"
+        },
+        {
+          "name": "Wuffes",
+          "what": "DTC dog supplement chews",
+          "stage": "Bootstrapped growth",
+          "signal": "Launched nationwide at Petco (Apr 30, 2026) with two hero SKUs in 1,400+ stores and five more in 180 select locations; 750,000+ dogs served, 20% of subscribers already shopped Petco",
+          "trend": "up",
+          "why": "Clean template for the DTC-to-retail crossover: two hero SKUs chain-wide, test the tail in a subset, pitch the buyer on subscriber overlap.",
+          "source": "PetfoodIndustry"
+        }
+      ]
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness",
+      "color": "#E63946",
+      "trend": "flat",
+      "heat": 62,
+      "gaps": [
+        "Growth capital went to better-for-you nutrition, not equipment — Medici took $250M while no connected-fitness hardware brand raised at all. A hardware brand without a consumables attach is currently unfundable.",
+        "Studio expansion is bottlenecked on real estate, not demand: Solidcore filed a $659K buildout this week for a studio that won't open until April 2027. Site selection, permitting and modular fit-out for boutique operators is an underserved B2B wedge.",
+        "Social wellness and recovery clubs are stalled — Remedy Place has had no new location, funding or partnership news in over a year despite proven demand. A lower-capex, franchisable format is unclaimed.",
+        "Differentiation in pilates and strength has moved from equipment to identity and community — and the operating stack for small identity-led studio brands (booking, retention, multi-site payroll) is still cobbled together from generic tools."
+      ],
+      "companies": [
+        {
+          "name": "Medici Brands (David Protein)",
+          "what": "High-protein bars and better-for-you snacks",
+          "stage": "Series B ($250M)",
+          "signal": "Raised a $250M Series B under the newly unveiled Medici Brands umbrella, with candy and a second brand launching later in 2026 (Sep 2, 2026)",
+          "trend": "up",
+          "why": "Largest fitness-adjacent round of the week went to consumables, not hardware or studios — the clearest read on where fitness capital is pointing.",
+          "source": "Athletech News"
+        },
+        {
+          "name": "Solidcore",
+          "what": "Low-impact reformer pilates studios",
+          "stage": "PE-backed (L Catterton majority)",
+          "signal": "Filed a $659,725 buildout for a 2,023 sq ft studio at Frisco's Fields West — construction starting Feb 2027, opening April 2027 (Sep 2, 2026)",
+          "trend": "up",
+          "why": "A 7-month permit-to-door lead time is the real constraint on boutique fitness growth; whoever compresses it sells to every operator in the category.",
+          "source": "Hoodline"
+        },
+        {
+          "name": "Ken Pilates",
+          "what": "LGBTQ-owned pilates studio brand",
+          "stage": "Early, founder-led",
+          "signal": "Announced expansion into New York City (Aug 31, 2026), differentiating on brand identity and community rather than equipment or format",
+          "trend": "up",
+          "why": "In a saturated modality, positioning is the only remaining moat — cheaper path to a defensible studio brand than better hardware.",
+          "source": "Athletech News"
+        },
+        {
+          "name": "Tonal",
+          "what": "Wall-mounted digital strength trainer",
+          "stage": "Late-stage private",
+          "signal": "No news this week; last move was 175,000+ members reported and re-signing Tony Horton with three new coaches under new CEO Todd Bartee (Mar 16, 2026)",
+          "trend": "flat",
+          "why": "Connected-fitness hardware went silent while nutrition raised $250M — if you're building a device, content and coaching is the only lever still moving retention.",
+          "source": "Athletech News"
+        },
+        {
+          "name": "Remedy Place",
+          "what": "Social wellness club — ice bath, sauna, IV, hyperbaric",
+          "stage": "Private, founder-led",
+          "signal": "No news this week or in 16 months; last substantive items are the Boston club opening (Mar 2025) and the Meridian biomarker program with Bioniq (May 2025)",
+          "trend": "flat",
+          "why": "A category everyone calls hot has produced no capital or footprint news in 16 months — read that as capex-per-club being unsolved, and an opening for an asset-light format.",
+          "source": "Athletech News"
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "name": "Construction & Trades",
+      "color": "#8D99AE",
+      "trend": "up",
+      "heat": 74,
+      "gaps": [
+        "All recent capital went to new-build and buried infrastructure (Digs, CivilGrid, Gravis). Nothing is funded for building-envelope work after handover — the recurring facade, glass, sealant and restoration market. That whole post-occupancy segment is un-VC'd.",
+        "Construction robotics money is concentrated in horizontal work — excavation autonomy and roofing. Vertical facade access (BMU, swing stage, rope access) has no credible venture-backed automation, so labor cost remains the moat for anyone already licensed and insured.",
+        "Digs/Builders FirstSource is the signal to copy: a materials distributor is now the software channel and owns the contractor's data. The same distributor-as-software play is wide open in exterior maintenance supply — glass, sealants, access equipment, chemicals.",
+        "A&E back office is consolidating (Total Synergy + Monograph under M33 and PSG) while specialty-trade back office stays fragmented — that's a roll-up target list, not a build target."
+      ],
+      "companies": [
+        {
+          "name": "Digs",
+          "what": "AI digital twin tracking a home's build history, materials and warranty",
+          "stage": "Series A ($47M+ total)",
+          "signal": "Raised $25.3M Series A led by Builders FirstSource with a strategic partnership covering the home's entire lifecycle (Aug 26, 2026; reported in the Aug 31 ConTech roundup)",
+          "trend": "up",
+          "why": "A materials distributor led the round, not a VC — whoever supplies the trade will own the trade's software, and a supplier partnership beats direct sales on speed.",
+          "source": "GeekWire / Bricks & Bytes"
+        },
+        {
+          "name": "CivilGrid",
+          "what": "Underground utility mapping and site data platform",
+          "stage": "Series A ($26M)",
+          "signal": "Raised $26M Series A led by Spark Capital with Energy Impact Partners, Afore and A* to map buried infrastructure for US construction and utility work (Aug 27, 2026)",
+          "trend": "up",
+          "why": "Investors will pay real money for boring, hard-to-assemble field data — the equivalent unassembled dataset in commercial exteriors is building access and anchor records.",
+          "source": "BusinessWire"
+        },
+        {
+          "name": "Gravis Robotics",
+          "what": "Retrofit autonomy kits that let excavators run empty-cab",
+          "stage": "Series A ($200M)",
+          "signal": "Raised a $200M Series A led by SoftBank for construction autonomy kits, tied to empty-cab excavator operations in Nevada (Aug 17, 2026)",
+          "trend": "up",
+          "why": "The largest construction-autonomy check of the period went to a retrofit kit, not a new machine — the lesson on selling automation into an industry that already owns its equipment.",
+          "source": "Bricks & Bytes"
+        },
+        {
+          "name": "Handoff",
+          "what": "AI estimating and takeoff for remodelers and small contractors",
+          "stage": "Seed/Series A",
+          "signal": "Launched H1, billed as the first AI model for autonomous blueprint takeoffs, cutting takeoffs from ~two weeks to two hours (Jul 21, 2026); no news this week",
+          "trend": "up",
+          "why": "Estimating speed is the bid-win variable in every trade — if H1 generalizes past residential drawings, manual facade and elevation takeoffs are next.",
+          "source": "PR Newswire"
+        },
+        {
+          "name": "Renovate Robotics",
+          "what": "Rufus, a cable-driven robot that installs roof shingles",
+          "stage": "Seed (HAX-backed)",
+          "signal": "No funding or product news this week; latest milestones are its Saint-Gobain/CertainTeed commercialization partnership and a 2026 RBR50 award",
+          "trend": "flat",
+          "why": "Closest analog to facade automation — cable-suspended, works the exterior, partnered with a materials giant. If it stalls, vertical exterior automation is further out than the hype.",
+          "source": "The Robot Report"
+        }
+      ]
+    },
+    {
+      "id": "physical-ai",
+      "name": "Physical AI & Robotics",
+      "color": "#E0FF4F",
+      "trend": "up",
+      "heat": 93,
+      "gaps": [
+        "Perception, not intelligence, is the binding constraint — Lyte raised $165M for custom 4D sensing silicon precisely because robots still can't reliably see. The models are ahead of the sensors.",
+        "Distribution is the choke point in regulated verticals: Cornerstone took $700M from Medtronic for global access rather than building its own channel. Strategics, not VCs, own the last mile.",
+        "Defense and military manufacturing automation is capital-starved relative to demand — the ARM Institute allocated $90M across 10 modernization projects with a two-year shipping requirement.",
+        "Robotics freedom-to-operate tooling doesn't exist — JAKA filed back against Teradyne over a patent dispute this week. IP diligence is becoming real risk with no infrastructure to support it.",
+        "Sub-$200M exits are the realistic outcome, not the exception (Enovis buying eCential for $180M) — capital efficiency beats scale for anyone entering hardware now."
+      ],
+      "companies": [
+        {
+          "name": "Lyte",
+          "what": "Custom-silicon perception stack for robots — 4D sensing, RGB, motion awareness",
+          "stage": "Series C ($165M at $1.6B)",
+          "signal": "Raised $165M Series C at $1.6B post led by Maverick Silicon with Fidelity and Atreides (Sep 2, 2026); $272M total raised, founded by ex-Apple and PrimeSense/Kinect engineers",
+          "trend": "up",
+          "why": "The picks-and-shovels position in physical AI — sell perception to every robot maker instead of betting on which humanoid wins.",
+          "source": "Crunchbase News"
+        },
+        {
+          "name": "Cornerstone Robotics",
+          "what": "Surgical robotics distributed alongside Medtronic's Hugo and Sentire platforms",
+          "stage": "Growth / strategic-backed",
+          "signal": "Medtronic announced a strategic partnership including a ~$700M investment to expand global access to robotic-assisted surgery (Sep 1, 2026)",
+          "trend": "up",
+          "why": "A $700M strategic check instead of a VC round — in regulated hardware the incumbent's sales force is worth more than a higher valuation.",
+          "source": "Medtronic"
+        },
+        {
+          "name": "eCential Robotics",
+          "what": "Surgical navigation and robotics for orthopedic procedures",
+          "stage": "Acquired ($180M)",
+          "signal": "Enovis agreed to acquire eCential Robotics for $180M, planning a robotic knee system within two years (Sep 5, 2026)",
+          "trend": "up",
+          "why": "Concrete evidence the robotics exit window is open at modest scale — you don't need a unicorn outcome to get bought by a medtech strategic.",
+          "source": "The Robot Report"
+        },
+        {
+          "name": "Robot.com (formerly Kiwibot)",
+          "what": "Sidewalk delivery robots for campuses, food service and last mile",
+          "stage": "Growth / commercial scale",
+          "signal": "Announced a partnership with Sodexo to roll out more sidewalk delivery robots (Sep 4, 2026); its Kiwi robot has completed 2.4 million tasks",
+          "trend": "up",
+          "why": "A channel partnership with a global food-services operator beats city-by-city expansion — the enterprise customer solves deployment and density for you.",
+          "source": "The Robot Report"
+        },
+        {
+          "name": "JAKA Robotics",
+          "what": "Collaborative robot (cobot) manufacturer for industrial automation",
+          "stage": "Late-stage private",
+          "signal": "Filed legal action back against Teradyne Robotics over a patent dispute, calling Teradyne's statements false and misleading (Sep 3, 2026)",
+          "trend": "flat",
+          "why": "Patent warfare in cobots signals the category has matured past land grab into share defense — factor IP diligence into any hardware roadmap now.",
+          "source": "The Robot Report"
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media & Creators",
+      "color": "#FFD166",
+      "trend": "flat",
+      "heat": 38,
+      "gaps": [
+        "Almost no venture capital reached creator or media disruptors this week — fintech and AI infra took it all. If you build here you compete for attention, not capital, which is the cheaper fight.",
+        "Creator payout rails are being taken in-house — X cut Stripe out of US creator payouts on Sep 2. Independent creators and small publishers now have one more wallet to reconcile and no tooling that consolidates payouts across platforms.",
+        "Publisher leverage against AI is litigation-shaped, not product-shaped — Seattle Times and Newsday sued OpenAI and Microsoft this week. Collective RAG licensing exists, but there is no self-serve way for a one-person newsletter to price and license its archive.",
+        "Provenance is becoming a platform requirement — Instagram began restricting undisclosed AI-generated profiles on Aug 31. Disclosure and content-origin tooling for small publishers is unbuilt and about to be mandatory."
+      ],
+      "companies": [
+        {
+          "name": "HubX",
+          "what": "Holding company acquiring and scaling consumer apps with generative AI",
+          "stage": "Series A ($75M at $1.275B pre)",
+          "signal": "Raised up to $75M from Point72 Private Investments at a $1.275B pre-money valuation (Sep 3, 2026) — first external capital after bootstrapping to ~3.7M daily active users, earmarked for acquisitions",
+          "trend": "up",
+          "why": "A bootstrapped app roll-up hitting unicorn pricing on its first round — live proof that buying small profitable software and re-skinning it with AI beats building from zero.",
+          "source": "TechStartups / HubX"
+        },
+        {
+          "name": "beehiiv",
+          "what": "Newsletter publishing, ads and creator monetization",
+          "stage": "Series B (~$225M valuation)",
+          "signal": "No news this week; last move was its July 17, 2026 expansion into a full creator suite with a doubled ad sales team, while X pulled US creator payouts onto its own rails on Sep 2",
+          "trend": "flat",
+          "why": "beehiiv's bet is that owning the list beats renting a platform audience — the X payout move is the argument to make to anyone debating email versus social.",
+          "source": "TechCrunch / Adweek"
+        },
+        {
+          "name": "Rwaj",
+          "what": "Live-commerce and auction marketplace platform",
+          "stage": "Pre-seed ($1.2M)",
+          "signal": "Raised $1.2M pre-seed (Sep 4, 2026) — the only new creator-commerce round of the week",
+          "trend": "up",
+          "why": "Live selling is still early enough that a small operator can test the format without competing against funded incumbents.",
+          "source": "TechStartups"
+        },
+        {
+          "name": "Graze",
+          "what": "Custom feed builder and monetization for the open social web (Bluesky/AT Protocol)",
+          "stage": "Acquired by Flipboard",
+          "signal": "Acquired by Flipboard in a deal framed as monetizing open-protocol feeds (Aug 26, 2026)",
+          "trend": "flat",
+          "why": "Small creator-tools companies are exiting to strategics rather than raising up-rounds — a realistic exit path if you build tooling here.",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "id": "mobility",
+      "name": "Mobility & Auto",
+      "color": "#06D6A0",
+      "trend": "flat",
+      "heat": 57,
+      "gaps": [
+        "Robotaxi capital and coverage went almost entirely to giants this week (Waymo launched Denver, San Diego and Tampa; Zoox opened Las Vegas airport pickups; Tesla's Cybercab drew a federal probe). No independent US L4 challenger raised or launched — depot ops, remote assistance and fleet insurance are the open lanes.",
+        "Slate slipping first deliveries to December with 180K+ deposit holders exposes an unserved need: deposit-holder financing, delivery-slot logistics and pre-delivery service networks for EV startups with demand but no dealer footprint.",
+        "Leadership churn at capital-intensive hardware startups with no bench (Pivotal lost its CEO Sep 1) — interim-exec and certification-program talent for novel-airframe companies is scarce and mostly unbrokered.",
+        "Battery swapping for two- and three-wheelers is being funded by a Tier 1 supplier rather than VC (Magna into Yuma) — swap-network interoperability standards and battery residual-value underwriting remain unowned."
+      ],
+      "companies": [
+        {
+          "name": "Slate Auto",
+          "what": "Sub-$25K modular electric pickup",
+          "stage": "Private, Bezos-backed, pre-production",
+          "signal": "Emailed reservation holders that December 2026 is the earliest delivery window, with most quoted July-September 2027 (~Sep 4, 2026); 180,000+ deposit holders reported",
+          "trend": "flat",
+          "why": "Demand is proven and supply is the bottleneck — the gap between 180K deposits and a December trickle is where EV startups historically die or get acquired.",
+          "source": "TechCrunch / InsideEVs"
+        },
+        {
+          "name": "REGENT Craft",
+          "what": "All-electric wing-in-ground-effect seagliders",
+          "stage": "Series B ($240M; $340M total)",
+          "signal": "Closed a $240M Series B co-led by Mare Liberum and AE Ventures with debt from Erebor Bank (Aug 27, 2026), funding a completed 255,000 sq ft factory, Viceroy certification milestones and an expanded US Marine Corps contract",
+          "trend": "up",
+          "why": "Dual-use defense-plus-commercial structure with venture debt from a defense-adjacent bank — the financing pattern hardware founders should copy.",
+          "source": "REGENT / TechCrunch Mobility"
+        },
+        {
+          "name": "Yuma Energy",
+          "what": "Battery-swapping network for India's electric two- and three-wheelers",
+          "stage": "Series A ($35M)",
+          "signal": "Raised $35M from Magna International — the Tier 1 supplier's second and larger bet on the company — to expand swapping across India (Aug 31, 2026)",
+          "trend": "up",
+          "why": "Strategic-supplier money instead of VC money means swapping is being treated as infrastructure, and it comes with manufacturing leverage a fund can't provide.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Pivotal",
+          "what": "Single-seat personal eVTOL aircraft",
+          "stage": "Private (Larry Page-backed)",
+          "signal": "CEO Ken Karklin departed; Mike Ross named interim CEO (Sep 1, 2026)",
+          "trend": "down",
+          "why": "A CEO exit at a certification-stage aircraft company almost always signals a slipped regulatory timeline — watch for the follow-on layoff or pivot.",
+          "source": "TechCrunch"
+        },
+        {
+          "name": "Liux",
+          "what": "Spanish sustainable-materials microcar for European cities",
+          "stage": "Early private, pre-launch",
+          "signal": "Profiled Aug 30, 2026 on its 'Big' city EV, targeted under EUR 18,000 for a 2027 European launch, using bio-based materials and a small team as its defense against cheap Chinese imports",
+          "trend": "flat",
+          "why": "A credible test of whether a tiny team can undercut Chinese EVs on materials and simplicity rather than scale — the same bet Slate is making in the US.",
+          "source": "TechCrunch"
+        }
+      ]
+    }
   ]
 }
