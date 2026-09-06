@@ -1,0 +1,117 @@
+{
+  "updated": "2026-09-06",
+  "seed": true,
+  "categories": [
+    {"id":"beverages","name":"Beverages","color":"#FF6B3D","trend":"up","heat":82,
+     "gaps":["Functional drinks still taste like medicine — flavor is the open lane","No dominant brand in adult non-alc cocktails at bars (on-premise)","Water brands win on packaging, not product — a real hydration-science play is open"],
+     "companies":[
+       {"name":"Olipop","what":"Prebiotic soda","stage":"Late-stage / $1B+ val","signal":"Gained shelf space at Walmart and Target; prebiotic soda now a defined aisle","trend":"up","why":"Proved big-soda drinkers will switch if it tastes like soda"},
+       {"name":"Liquid Death","what":"Canned water with metal-brand marketing","stage":"Late-stage","signal":"Expanding into iced tea and sparkling flavors; heavy on-premise push","trend":"up","why":"Brand > product — packaging alone created a category"},
+       {"name":"Athletic Brewing","what":"Non-alcoholic craft beer","stage":"Late-stage","signal":"Largest NA beer brand in US; opened second brewery","trend":"up","why":"Sober-curious trend is durable, not a fad"}
+     ]},
+    {"id":"consumer-products","name":"Consumer Products","color":"#FFC53D","trend":"flat","heat":55,
+     "gaps":["Most DTC brands are Shopify + Meta ads — undifferentiated; the ones winning own a physical retail story","Home cleaning and maintenance products have had no real innovation in years"],
+     "companies":[
+       {"name":"Ridge","what":"Minimalist wallets, now luggage and rings","stage":"Bootstrapped, $100M+ rev","signal":"Expanding categories off one hero SKU","trend":"up","why":"One well-made object + relentless ads still works"},
+       {"name":"Jolie","what":"Filtered showerhead","stage":"Growth","signal":"Beauty-positioned hardware, subscription filters","trend":"up","why":"Turned a plumbing part into a beauty product with recurring revenue"}
+     ]},
+    {"id":"home-services","name":"Home Services","color":"#3DDC97","trend":"up","heat":78,
+     "gaps":["Booking still happens by phone and text — most operators have no real software","Commercial exterior services (windows, pressure washing, lighting) have no consolidated brand at all"],
+     "companies":[
+       {"name":"Jobber","what":"Field service software for small operators","stage":"Late-stage","signal":"Adding AI phone answering and quoting","trend":"up","why":"Owns the SMB trades workflow; watch what they can't do"},
+       {"name":"Frontdoor (Frontdoor Pro)","what":"Home repair marketplace","stage":"Public","signal":"Pushing on-demand video diagnosis","trend":"flat","why":"Shows demand for remote triage before a truck rolls"}
+     ]},
+    {"id":"restaurants","name":"Restaurants & Food","color":"#FF4D6D","trend":"flat","heat":60,
+     "gaps":["Ghost kitchens over-built; the winning model is small-footprint, high-throughput single-concept","Labor is the constraint — automation that fits an existing kitchen, not a robot restaurant"],
+     "companies":[
+       {"name":"Cava","what":"Mediterranean fast-casual","stage":"Public","signal":"Still opening units fast while peers slow","trend":"up","why":"Proof a new cuisine can still scale nationally"},
+       {"name":"Sweetgreen","what":"Salad chain with automated 'Infinite Kitchen'","stage":"Public","signal":"Rolling automation to more stores","trend":"flat","why":"Watch whether automation actually improves unit economics"}
+     ]},
+    {"id":"health-wearables","name":"Health & Wearables","color":"#5B8CFF","trend":"up","heat":88,
+     "gaps":["Data is everywhere, interpretation is nowhere — people want 'so what do I do'","Men's health and longevity clinics are fragmented and local"],
+     "companies":[
+       {"name":"Oura","what":"Smart ring","stage":"Late-stage, $5B+ val","signal":"Passed 5M rings; adding metabolic and women's health features","trend":"up","why":"Screenless wearable won — form factor matters"},
+       {"name":"Function Health","what":"Annual 100+ biomarker lab panels","stage":"Growth","signal":"Rapid member growth, acquired Ezra (whole-body MRI)","trend":"up","why":"Consumers will pay cash for diagnostics doctors won't order"},
+       {"name":"Whoop","what":"Subscription fitness band","stage":"Late-stage","signal":"Launched new hardware and blood-pressure insights","trend":"up","why":"Subscription hardware model holds"}
+     ]},
+    {"id":"fintech","name":"Fintech","color":"#9B6BFF","trend":"flat","heat":58,
+     "gaps":["Small-business banking for trades and field companies is still bad","Invoice-to-cash for B2B services remains manual"],
+     "companies":[
+       {"name":"Ramp","what":"Corporate cards + spend management","stage":"Late-stage, $10B+","signal":"Pushing AI agents that book travel and file expenses","trend":"up","why":"Software eats the finance team"},
+       {"name":"Mercury","what":"Startup and SMB banking","stage":"Late-stage","signal":"Expanding to personal banking and invoicing","trend":"up","why":"Bank as software product, not branch"}
+     ]},
+    {"id":"ai-tools","name":"AI Tools","color":"#00C2FF","trend":"up","heat":97,
+     "gaps":["Vertical AI for boring industries (property management, trades, logistics) is wide open","Most tools stop at 'draft' — the money is in tools that finish the job"],
+     "companies":[
+       {"name":"Cursor (Anysphere)","what":"AI code editor","stage":"Late-stage, multi-$B","signal":"Fastest-growing dev tool by revenue","trend":"up","why":"Shows how fast a wedge product can win a category"},
+       {"name":"Lovable","what":"Prompt-to-app builder","stage":"Growth","signal":"Non-developers shipping real apps","trend":"up","why":"Software creation is becoming a consumer behavior"},
+       {"name":"Harvey","what":"AI for law firms","stage":"Late-stage","signal":"Big-law adoption; expanding to in-house teams","trend":"up","why":"Template for vertical AI in a high-billing industry"}
+     ]},
+    {"id":"logistics","name":"Logistics & Delivery","color":"#FF9F1C","trend":"up","heat":72,
+     "gaps":["Hyperlocal (under 30 min) delivery outside dense cities is unsolved","Last-mile for heavy or awkward items still relies on 2-man crews"],
+     "companies":[
+       {"name":"Zipline","what":"Drone delivery","stage":"Late-stage","signal":"US suburban home delivery live with Walmart","trend":"up","why":"Drones moved from Africa medical to US groceries"},
+       {"name":"Veho","what":"Next-day parcel via gig drivers","stage":"Growth","signal":"Expanding metro coverage","trend":"flat","why":"Asset-light regional carriers can beat UPS on last mile"}
+     ]},
+    {"id":"real-estate","name":"Real Estate & Proptech","color":"#2EC4B6","trend":"down","heat":45,
+     "gaps":["Building maintenance vendors are still found by referral and spreadsheet","Commercial property managers have no good vendor-performance data"],
+     "companies":[
+       {"name":"Pacaso","what":"Co-owned second homes","stage":"Growth","signal":"Slowed with rates; retail investor raise","trend":"down","why":"Rate-sensitive models are exposed"},
+       {"name":"EliseAI","what":"AI leasing and resident assistant for property managers","stage":"Growth","signal":"Widening from leasing to maintenance requests","trend":"up","why":"Property management is buying AI — vendors can plug in"}
+     ]},
+    {"id":"energy","name":"Energy & Climate","color":"#7ED957","trend":"up","heat":70,
+     "gaps":["Residential batteries are sold like solar — pushy; no trusted brand","Commercial rooftop and facade retrofits lack an installer-of-record brand"],
+     "companies":[
+       {"name":"Base Power","what":"Home battery as a utility subscription (Texas)","stage":"Growth","signal":"Big raise; installing thousands of batteries","trend":"up","why":"Subscription flips the capex problem"},
+       {"name":"Lunar Energy","what":"Home battery + software","stage":"Growth","signal":"Utility partnerships","trend":"flat","why":"Hardware alone is commoditizing"}
+     ]},
+    {"id":"beauty","name":"Beauty & Personal Care","color":"#FF7EB6","trend":"up","heat":68,
+     "gaps":["Men's grooming beyond razors is under-branded","Med spa chains are rolling up but customer software is terrible"],
+     "companies":[
+       {"name":"Rhode","what":"Skincare, sold to e.l.f.","stage":"Acquired ~$1B","signal":"Founder-brand exit sets the playbook","trend":"up","why":"Small SKU count + creator distribution = fast exit"},
+       {"name":"Ever/Body","what":"Med spa chain","stage":"Growth","signal":"Opening units in major metros","trend":"up","why":"Aesthetics is becoming a chain business"}
+     ]},
+    {"id":"travel","name":"Travel & Hospitality","color":"#4CC9F0","trend":"flat","heat":52,
+     "gaps":["Group trip planning and payment is still a group chat","Boutique hotel operations software is a decade behind"],
+     "companies":[
+       {"name":"Mindtrip","what":"AI trip planner","stage":"Early","signal":"Adding booking and group features","trend":"up","why":"AI planning is the new front door if it can book"},
+       {"name":"Sonder","what":"Apartment-style hotels","stage":"Public, distressed","signal":"Restructuring","trend":"down","why":"Asset-heavy hospitality tech struggles"}
+     ]},
+    {"id":"education","name":"Education","color":"#B5179E","trend":"flat","heat":50,
+     "gaps":["Trades training has no premium brand — everything is community college or YouTube","Adult upskilling for AI is fragmented"],
+     "companies":[
+       {"name":"Alpha School","what":"AI-driven 2-hour learning school model","stage":"Growth","signal":"Expanding campuses beyond Texas","trend":"up","why":"Private K-12 reinvention has real demand"},
+       {"name":"Synthesis","what":"AI math tutor for kids","stage":"Growth","signal":"Product expansion","trend":"flat","why":"Consumer edtech is hard; watch retention"}
+     ]},
+    {"id":"pets","name":"Pets","color":"#F4A261","trend":"up","heat":66,
+     "gaps":["Vet care is consolidating under PE — an independent, transparent-pricing chain is open","Pet insurance still confusing and low-penetration"],
+     "companies":[
+       {"name":"Ollie","what":"Fresh dog food subscription","stage":"Growth","signal":"Retail expansion","trend":"flat","why":"Fresh pet food is now a category, not a niche"},
+       {"name":"Bond Vet","what":"Modern urgent-care vet clinics","stage":"Growth","signal":"Opening clinics across East Coast","trend":"up","why":"Retail-style vet is working"}
+     ]},
+    {"id":"fitness","name":"Fitness","color":"#E63946","trend":"up","heat":74,
+     "gaps":["Recovery (sauna, cold plunge, red light) studios are booming with no national brand","Strength-only gyms for regular people, not powerlifters"],
+     "companies":[
+       {"name":"Tonal","what":"Smart strength machine","stage":"Late-stage","signal":"New hardware gen; profitability push","trend":"flat","why":"Connected fitness survivors are consolidating"},
+       {"name":"Remedy Place","what":"Social wellness club","stage":"Growth","signal":"Expanding locations","trend":"up","why":"Recovery as a premium social space"}
+     ]},
+    {"id":"construction","name":"Construction & Trades","color":"#8D99AE","trend":"up","heat":71,
+     "gaps":["Subcontractor sourcing and vetting is still word of mouth","Estimating is manual for most contractors under $10M"],
+     "companies":[
+       {"name":"Handoff","what":"AI estimating for remodelers","stage":"Early","signal":"Growing contractor base","trend":"up","why":"AI hits the estimate — the bottleneck for every small contractor"},
+       {"name":"Renovate Robotics","what":"Roofing robots","stage":"Early","signal":"Pilots with roofers","trend":"up","why":"Labor shortage makes exterior robotics fundable"}
+     ]},
+    {"id":"media","name":"Media & Creators","color":"#FFD166","trend":"flat","heat":57,
+     "gaps":["Local news is dead — hyperlocal alerts and info apps have room","B2B creators (trades, ops) are underserved by tools"],
+     "companies":[
+       {"name":"Beehiiv","what":"Newsletter platform","stage":"Growth","signal":"Adding ads network and websites","trend":"up","why":"Owned audience is the durable creator asset"},
+       {"name":"Citizen","what":"Live safety alerts app","stage":"Late-stage","signal":"Adding AI incident summaries","trend":"flat","why":"Proves demand for real-time local info"}
+     ]},
+    {"id":"mobility","name":"Mobility & Auto","color":"#06D6A0","trend":"flat","heat":54,
+     "gaps":["Fleet maintenance for small service companies is a whiteboard","EV charging at multifamily and commercial buildings is unsolved"],
+     "companies":[
+       {"name":"Slate Auto","what":"$20K bare-bones electric truck","stage":"Growth (pre-delivery)","signal":"Huge reservation count","trend":"up","why":"Cheap and simple can win against feature bloat"},
+       {"name":"Waymo","what":"Robotaxi","stage":"Alphabet","signal":"Expanding to new metros incl. Phoenix growth","trend":"up","why":"Not small, but changes every local transport business"}
+     ]}
+  ]
+}

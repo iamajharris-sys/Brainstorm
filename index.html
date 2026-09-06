@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Disruptors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#05070C; --ink:#E8EBF2; --dim:#7C8597; --line:#1B2130;
+    --amber:#FFB000; --up:#3DDC97; --down:#FF4D6D; --flat:#7C8597;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:var(--bg);color:var(--ink);overflow:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro",Inter,system-ui,sans-serif;-webkit-user-select:none;user-select:none}
+  canvas{display:block;width:100vw;height:100vh;touch-action:none;cursor:grab}
+  canvas.drag{cursor:grabbing}
+
+  .hud{position:fixed;left:16px;top:max(14px,env(safe-area-inset-top));pointer-events:none;
+    font:500 12px/1.4 "IBM Plex Mono",monospace;color:var(--dim)}
+  .hud b{color:var(--ink);font-weight:600}
+  .hud .seed{color:var(--amber)}
+  .hint{position:fixed;bottom:max(14px,env(safe-area-inset-bottom));left:0;right:0;text-align:center;
+    font:12px/1 "IBM Plex Mono",monospace;color:var(--dim);pointer-events:none;transition:opacity .4s}
+  .hint.off{opacity:0}
+
+  /* terminal */
+  .term{position:fixed;inset:0;background:rgba(5,7,12,.96);transform:translateY(100%);
+    transition:transform .32s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;
+    font-family:"IBM Plex Mono",monospace;font-size:13px;line-height:1.45}
+  .term.open{transform:translateY(0)}
+  @media (prefers-reduced-motion:reduce){.term{transition:none}}
+  .thead{padding:max(14px,env(safe-area-inset-top)) 16px 12px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px}
+  .thead .sw{width:14px;height:14px;border-radius:50%;flex:none}
+  .thead h1{font:600 16px/1 "IBM Plex Mono",monospace;flex:1;letter-spacing:-.01em}
+  .thead .stat{color:var(--dim)}
+  .thead .stat b{font-weight:500}
+  .thead button{background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 12px;border-radius:4px;cursor:pointer}
+  .thead button:focus-visible{outline:2px solid var(--amber)}
+  .tbody{overflow:auto;flex:1;padding-bottom:max(24px,env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch}
+  .sec{padding:12px 16px 4px;color:var(--amber);font-weight:600}
+  .gaps{padding:0 16px 8px}
+  .gaps li{list-style:none;padding:6px 0 6px 18px;position:relative;color:var(--ink);border-bottom:1px solid var(--line)}
+  .gaps li::before{content:"›";position:absolute;left:4px;color:var(--amber)}
+  table{width:100%;border-collapse:collapse}
+  th{text-align:left;color:var(--dim);font-weight:500;padding:8px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  td{padding:10px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr.row{cursor:pointer}
+  tr.row:hover td,tr.row:focus-within td{background:#0B0F19}
+  td.name{font-weight:600;white-space:nowrap}
+  td.what{color:var(--dim)}
+  .t{font-weight:600}.t.up{color:var(--up)}.t.down{color:var(--down)}.t.flat{color:var(--flat)}
+  tr.detail td{background:#080B13;color:var(--ink);padding:12px 16px 14px 32px}
+  tr.detail .k{color:var(--dim);display:inline-block;width:70px}
+  tr.detail p{margin:2px 0}
+  .col-stage,.col-signal{display:none}
+  @media(min-width:720px){.col-stage,.col-signal{display:table-cell}}
+  .empty{padding:40px 16px;color:var(--dim)}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="hud" id="hud"></div>
+<div class="hint" id="hint">drag to explore · tap a category</div>
+
+<div class="term" id="term" aria-hidden="true">
+  <div class="thead">
+    <span class="sw" id="tsw"></span>
+    <h1 id="ttitle"></h1>
+    <span class="stat" id="tstat"></span>
+    <button id="tclose">close</button>
+  </div>
+  <div class="tbody" id="tbody"></div>
+</div>
+
+<script>
+const DATA_URL = 'data.json';
+let data = null;
+
+/* ---------- honeycomb ---------- */
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+let W, H, DPR, R = 46, nodes = [], cam = {x:0,y:0}, vel = {x:0,y:0}, drag = null, moved = false;
+
+function resize(){
+  DPR = Math.min(devicePixelRatio||1, 2); W = innerWidth; H = innerHeight;
+  cv.width = W*DPR; cv.height = H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0);
+  R = W < 480 ? 42 : 52;
+  layout();
+}
+// spiral hex ring layout so the most important categories sit in the middle
+function layout(){
+  nodes = [];
+  if(!data) return;
+  const cats = [...data.categories].sort((a,b)=>b.heat-a.heat);
+  const dx = R*2.08, dy = dx*Math.sqrt(3)/2;
+  const dirs = [[1,0],[0.5,1],[-0.5,1],[-1,0],[-0.5,-1],[0.5,-1]];
+  const pos = [[0,0]];
+  for(let ring=1; pos.length<cats.length; ring++){
+    let q = ring, r = 0; // start east, walk the ring
+    let x = ring, y = 0;
+    for(let side=0; side<6; side++){
+      const d = dirs[(side+2)%6];
+      for(let i=0;i<ring;i++){ x+=d[0]; y+=d[1]; pos.push([x,y]); }
+    }
+  }
+  cats.forEach((c,i)=>{ const [x,y]=pos[i]; nodes.push({c, x:x*dx, y:y*dy}); });
+}
+function scaleAt(d){ // apple-watch falloff
+  const max = Math.min(W,H)*0.62;
+  if(d>max) return 0;
+  const t = d/max; return 1 - t*t*0.78;
+}
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  const cx = W/2 - cam.x, cy = H/2 - cam.y;
+  for(const n of nodes){
+    const sx = cx + n.x, sy = cy + n.y;
+    const s = scaleAt(Math.hypot(sx-W/2, sy-H/2));
+    n.sx = sx; n.sy = sy; n.r = R*s; if(s<=0) continue;
+    ctx.beginPath(); ctx.arc(sx,sy,n.r,0,Math.PI*2);
+    ctx.fillStyle = n.c.color; ctx.globalAlpha = 0.55+0.45*s; ctx.fill();
+    ctx.globalAlpha = 1;
+    if(s>0.42){
+      ctx.fillStyle = '#05070C';
+      ctx.font = `600 ${Math.round(12*s+1)}px -apple-system,BlinkMacSystemFont,Inter,sans-serif`;
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      const words = n.c.name.split(/[ &]+/).filter(Boolean);
+      const lines = words.length>2 ? [words.slice(0,2).join(' '), words.slice(2).join(' ')] : words.length===2 ? words : [n.c.name];
+      const lh = 13*s;
+      lines.forEach((l,i)=>ctx.fillText(l, sx, sy - (lines.length-1)*lh/2 + i*lh - 4*s));
+      const arrow = n.c.trend==='up'?'▲':n.c.trend==='down'?'▼':'▬';
+      ctx.font = `500 ${Math.round(9*s+1)}px "IBM Plex Mono",monospace`;
+      ctx.fillText(`${arrow} ${n.c.heat}`, sx, sy + (lines.length)*lh/2 + 6*s);
+    }
+  }
+  if(!drag && (Math.abs(vel.x)>0.05||Math.abs(vel.y)>0.05)){ cam.x+=vel.x; cam.y+=vel.y; vel.x*=0.92; vel.y*=0.92; requestAnimationFrame(draw); }
+}
+function hit(x,y){ let best=null,bd=1e9; for(const n of nodes){ const d=Math.hypot(n.sx-x,n.sy-y); if(d<n.r && d<bd){best=n;bd=d;} } return best; }
+
+/* input */
+const pt = e => e.touches ? [e.touches[0].clientX, e.touches[0].clientY] : [e.clientX, e.clientY];
+function down(e){ const [x,y]=pt(e); drag={x,y,lx:x,ly:y,t:Date.now()}; moved=false; vel={x:0,y:0}; cv.classList.add('drag'); }
+function move(e){ if(!drag) return; const [x,y]=pt(e); const dx=x-drag.lx, dy=y-drag.ly;
+  if(Math.abs(x-drag.x)>4||Math.abs(y-drag.y)>4) moved=true;
+  cam.x-=dx; cam.y-=dy; vel={x:-dx,y:-dy}; drag.lx=x; drag.ly=y; requestAnimationFrame(draw); e.preventDefault(); }
+function up(e){ if(!drag) return; cv.classList.remove('drag');
+  if(!moved){ const n=hit(drag.x,drag.y); if(n) open(n.c); }
+  drag=null; document.getElementById('hint').classList.add('off'); requestAnimationFrame(draw); }
+cv.addEventListener('mousedown',down); addEventListener('mousemove',move); addEventListener('mouseup',up);
+cv.addEventListener('touchstart',down,{passive:true}); cv.addEventListener('touchmove',move,{passive:false}); cv.addEventListener('touchend',up);
+cv.addEventListener('wheel',e=>{ cam.x+=e.deltaX; cam.y+=e.deltaY; requestAnimationFrame(draw); e.preventDefault(); },{passive:false});
+addEventListener('resize',()=>{resize();draw();});
+
+/* ---------- terminal ---------- */
+const term=document.getElementById('term'), tbody=document.getElementById('tbody');
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tr = t => `<span class="t ${t}">${t==='up'?'▲ up':t==='down'?'▼ down':'▬ flat'}</span>`;
+function open(c){
+  document.getElementById('tsw').style.background=c.color;
+  document.getElementById('ttitle').textContent=c.name;
+  document.getElementById('tstat').innerHTML=`heat <b>${c.heat}</b>&nbsp; ${tr(c.trend)}`;
+  const gaps = (c.gaps||[]).map(g=>`<li>${esc(g)}</li>`).join('');
+  const rows = (c.companies||[]).map((k,i)=>`
+    <tr class="row" tabindex="0" data-i="${i}">
+      <td class="name">${esc(k.name)}</td>
+      <td class="what">${esc(k.what)}</td>
+      <td class="col-stage">${esc(k.stage)}</td>
+      <td class="col-signal">${esc(k.signal)}</td>
+      <td>${tr(k.trend)}</td>
+    </tr>
+    <tr class="detail" hidden><td colspan="5">
+      <p><span class="k">stage</span>${esc(k.stage)}</p>
+      <p><span class="k">signal</span>${esc(k.signal)}</p>
+      <p><span class="k">why</span>${esc(k.why)}</p>
+      ${k.source?`<p><span class="k">source</span>${esc(k.source)}</p>`:''}
+    </td></tr>`).join('');
+  tbody.innerHTML = `
+    <div class="sec">Where it's weak — openings</div>
+    <ul class="gaps">${gaps||'<li>No gaps logged yet</li>'}</ul>
+    <div class="sec">Who's moving</div>
+    ${rows?`<table><thead><tr><th>company</th><th>what</th><th class="col-stage">stage</th><th class="col-signal">latest signal</th><th>trend</th></tr></thead><tbody>${rows}</tbody></table>`:'<div class="empty">No companies yet — run the daily refresh.</div>'}`;
+  tbody.scrollTop=0; term.classList.add('open'); term.setAttribute('aria-hidden','false');
+  document.getElementById('tclose').focus();
+}
+tbody.addEventListener('click',e=>{ const r=e.target.closest('tr.row'); if(!r) return; const d=r.nextElementSibling; d.hidden=!d.hidden; });
+tbody.addEventListener('keydown',e=>{ if(e.key==='Enter'&&e.target.classList.contains('row')) e.target.click(); });
+function close(){ term.classList.remove('open'); term.setAttribute('aria-hidden','true'); }
+document.getElementById('tclose').onclick=close;
+addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+
+/* ---------- load ---------- */
+async function load(){
+  try{ const r=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'}); if(!r.ok) throw 0; data=await r.json(); }
+  catch{ document.getElementById('hud').innerHTML='<b>Disruptors</b><br>data.json failed to load'; return; }
+  const hud=document.getElementById('hud');
+  hud.innerHTML=`<b>Disruptors</b><br>${data.categories.length} markets · updated ${esc(data.updated)}${data.seed?'<br><span class="seed">seed data — run the daily refresh</span>':''}`;
+  resize(); draw();
+}
+load();
+</script>
+</body>
+</html>
